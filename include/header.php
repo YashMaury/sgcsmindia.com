@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-< dir="ltr" lang="en">
+<html dir="ltr" lang="en">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -39,7 +39,7 @@
 
 </head>
 
-<>
+<body>
 
     <nav class="navbar navbar-dark top-nav-bar" id="top-nav-menu">
         <div class="container-fluid">
