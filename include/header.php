@@ -355,26 +355,17 @@
 
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-
                                 MORE
-
                             </a>
 
                             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
 
-                                <a class="dropdown-item" href="our-publication.php">Our
-                                    Publication</a>
-
+                                <a class="dropdown-item" href="our-publication.php">Our Publication</a>
                                 <a class="dropdown-item" href="our-gallery.php">Gallery</a>
-
                                 <a class="dropdown-item" href="https://sgcsmindia.org/placement-cell">Placement Cell</a>
-
                                 <a class="dropdown-item" href="https://sgcsmindia.org/news-events">News & Events</a>
-
                                 <a class="dropdown-item" href="https://sgcsmindia.org/media-coverage">Media Coverage</a>
-
-                                <a class="dropdown-item" href="https://sgcsmindia.org/study-material">Our Study
-                                    Materials</a>
+                                <a class="dropdown-item" href="https://sgcsmindia.org/study-material">Our Study Materials</a>
 
                             </div>
 
