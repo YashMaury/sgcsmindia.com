@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html dir="ltr" lang="en">
+< dir="ltr" lang="en">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -39,7 +39,7 @@
 
 </head>
 
-<body>
+<>
 
     <nav class="navbar navbar-dark top-nav-bar" id="top-nav-menu">
         <div class="container-fluid">
@@ -217,25 +217,11 @@
 
                         </li>
 
-                        <li class="nav-item"><a class="nav-link" href="contact.php">CONTACT US</a>
-                        </li>
-
-
-
-
+                        <li class="nav-item"><a class="nav-link" href="contact.php">CONTACT US</a></li>
 
                     </ul>
-
                 </div>
-
             </div>
 
-
-
         </nav>
-
     </menubar>
-
-</body>
-
-</html>
