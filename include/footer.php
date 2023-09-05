@@ -138,8 +138,6 @@
 
             options = options || {};
 
-
-
             return $(this).each(function () {
 
                 // set options for current element
@@ -157,8 +155,6 @@
                     decimals: $(this).data('decimals')
 
                 }, options);
-
-
 
                 // how many times to update the value, and how much to increment the value on each update
 
@@ -271,10 +267,6 @@
         text-decoration: none;
     }
 </style>
-
-
-
-
 
 <a class="scrollToTop" onclick='window.scrollTo({top: 0, behavior: "smooth"});' href="JavaScript:void(0);"
     style="display: inline;">
