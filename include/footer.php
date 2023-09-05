@@ -13,12 +13,12 @@
                     <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Quick Link</h5>
 
                     <ul class="list-unstyled">
-                        <li><a href="studentlogin">Admit Card</a></li>
-                        <li><a href="online-result">Result</a></li>
-                        <li><a href="news-events">News &amp; Event</a></li>
-                        <li><a href="rules-regulation">Rules &amp; Regulations</a></li>
-                        <li><a href="social-activity">Social Activity</a></li>
-                        <li><a href="contact">Contact Us</a></li>
+                        <li><a href="studentlogin.php">Admit Card</a></li>
+                        <li><a href="online-result.php">Result</a></li>
+                        <li><a href="news-events.php">News &amp; Event</a></li>
+                        <li><a href="rules-regulation.php">Rules &amp; Regulations</a></li>
+                        <li><a href="social-activity.php">Social Activity</a></li>
+                        <li><a href="contact.php">Contact Us</a></li>
                     </ul>
 
                 </div>
@@ -29,12 +29,12 @@
                     <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Useful Links</h5>
 
                     <ul class="list-unstyled">
-                        <li><a href="how-to-get-affiliaction">Registration Process</a></li>
-                        <li><a href="director-message">Director Message</a></li>
-                        <li><a href="linkage-affiliation">affiliation &amp; Authority</a></li>
-                        <li><a href="Career">Career</a></li>
-                        <li><a href="bank-details">Payment Mode</a></li>
-                        <li><a href="jobs">Jobs</a></li>
+                        <li><a href="how-to-get-affiliaction.php">Registration Process</a></li>
+                        <li><a href="director-message.php">Director Message</a></li>
+                        <li><a href="linkage-affiliation.php">affiliation &amp; Authority</a></li>
+                        <li><a href="Career.php">Career</a></li>
+                        <li><a href="bank-details.php">Payment Mode</a></li>
+                        <li><a href="jobs.php">Jobs</a></li>
                     </ul>
 
                 </div>
@@ -45,10 +45,10 @@
                     <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Get In Touch</h5>
 
                     <ul class="list-unstyled">
-                        <li><a href="exams">Examinations</a></li>
-                        <li><a href="how-to-get-affiliaction">How To Get affiliation</a></li>
-                        <li><a href="online_exam_registration">Online Exam Registration</a></li>
-                        <li><a href="about">About SGCSM</a></li>
+                        <li><a href="exams.php">Examinations</a></li>
+                        <li><a href="how-to-get-affiliaction.php">How To Get affiliation</a></li>
+                        <li><a href="online_exam_registration.php">Online Exam Registration</a></li>
+                        <li><a href="about.php">About SGCSM</a></li>
                     </ul>
 
                 </div>
