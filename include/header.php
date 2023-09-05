@@ -5,34 +5,23 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
+
     <link href="https://sgcsmindia.org/templates/assets/style.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-
-    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css"> -->
-    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script> -->
-    <!-- <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js"></script> -->
-    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"></script> -->
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"> -->
-    <!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" rel="stylesheet"> -->
-
-    <script src="assets/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-
+    
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script type="text/javascript"
         src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 
     <script>
-
         function googleTranslateElementInit() {
             new google.translate.TranslateElement({ pageLanguage: 'en' }, 'google_translate_element');
-
         }
     </script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
-
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
     <link
         href="https://fonts.googleapis.com/css2?family=Lora:wght@500&family=Roboto:ital,wght@0,400;0,500;1,400&display=swap"
         rel="stylesheet">
@@ -74,7 +63,7 @@
             <div class="col-sm-6">
                 <div class="logo">
                     <a href="index.php">
-                        <img class="img-fluid" src="https://sgcsmindia.org/uploads/images/logo.png">
+                        <img class="img-fluid" src="assets/images/logo1.png">
                     </a>
                 </div>
             </div>
@@ -97,7 +86,7 @@
     <menubar>
         <nav class="navbar navbar-expand-lg  top-nav-menu-bar">
             <div class="container">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
                     aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"><i class="bi bi-list"></i></span>
                 </button>
@@ -109,7 +98,7 @@
 
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 ABOUT US
                             </a>
 
@@ -125,7 +114,7 @@
 
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 COURSES
                             </a>
 
@@ -145,7 +134,7 @@
 
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 GET IN TOUCH
                             </a>
 
@@ -160,7 +149,7 @@
 
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 STUDENT
                             </a>
 
@@ -174,7 +163,7 @@
 
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 Center Section
                             </a>
 
@@ -189,7 +178,7 @@
 
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 Franchise
                             </a>
 
@@ -202,7 +191,7 @@
 
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
-                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 MORE
                             </a>
 
