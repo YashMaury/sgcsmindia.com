@@ -130,15 +130,15 @@
                             </a>
 
                             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <a class="dropdown-item" href="course.php?type=COMPUTER_COURSES">COMPUTER COURSES</a>
-                                <a class="dropdown-item" href="course.php?type=TEACHER_TRAINING_COURSE">TEACHER TRAINING COURSE</a>
-                                <a class="dropdown-item" href="course.php?type=NIELIT_COURSES">NIELIT COURSES</a>
-                                <a class="dropdown-item" href="course.php?type=BOUTIQUE_COURSES">BOUTIQUE COURSES</a>
-                                <a class="dropdown-item" href="course.php?type=BEAUTICIAN_COURSES">BEAUTICIAN COURSES </a>
-                                <a class="dropdown-item" href="course.php?type=UG_PG_COURSE">UG & PG COURSEs </a>
-                                <a class="dropdown-item" href="course.php?type=YOGA_COURSES">YOGA  COURSES</a>
-                                <a class="dropdown-item" href="course.php?type=NDLM_COURSES">NDLM COURSES</a>
-                                <a class="dropdown-item" href="course.php?type=ADVANCE_COURSES">ADVANCE COURSES</a>
+                                <a class="dropdown-item" href="course?type=COMPUTER_COURSES.php">COMPUTER COURSES</a>
+                                <a class="dropdown-item" href="course?type=TEACHER_TRAINING_COURSE.php">TEACHER TRAINING COURSE</a>
+                                <a class="dropdown-item" href="course?type=NIELIT_COURSES.php">NIELIT COURSES</a>
+                                <a class="dropdown-item" href="course?type=BOUTIQUE_COURSES.php">BOUTIQUE COURSES</a>
+                                <a class="dropdown-item" href="course?type=BEAUTICIAN_COURSES.php">BEAUTICIAN COURSES </a>
+                                <a class="dropdown-item" href="course?type=UG_PG_COURSE.php">UG & PG COURSEs </a>
+                                <a class="dropdown-item" href="course?type=YOGA_COURSES.php">YOGA  COURSES</a>
+                                <a class="dropdown-item" href="course?type=NDLM_COURSES.php">NDLM COURSES</a>
+                                <a class="dropdown-item" href="course?type=ADVANCE_COURSES.php">ADVANCE COURSES</a>
                             </div>
 
                         </li>
