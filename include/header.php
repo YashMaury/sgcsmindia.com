@@ -105,245 +105,114 @@
                 <div class="collapse navbar-collapse" id="navbarText">
                     <ul class="navbar-nav mr-auto">
                         
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.php">HOME</a>
-                        </li>
+                        <li class="nav-item"><a class="nav-link" href="index.php">HOME</a></li>
 
                         <li class="nav-item dropdown">
-
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-
                                 ABOUT US
-
                             </a>
 
                             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-
                                 <a class="dropdown-item" href="about.php">About Us</a>
-
-                                <a class="dropdown-item" href="mission-vision.php">Mission &
-                                    Vision</a>
-
+                                <a class="dropdown-item" href="mission-vision.php">Mission & Vision</a>
                                 <a class="dropdown-item" href="our-dream.php">Our Dream</a>
-
                                 <a class="dropdown-item" href="advantages.php">Advantages</a>
-
-
-
-                                <a class="dropdown-item" href="director-message.php">Director's
-                                    Message</a>
-
+                                <a class="dropdown-item" href="director-message.php">Director's Message</a>
                                 <a class="dropdown-item" href="our-team.php">Our Management Team</a>
-
                             </div>
-
                         </li>
 
-
-
                         <li class="nav-item dropdown">
-
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-
                                 COURSES
-
                             </a>
 
                             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-
-
-
-
-
-                                <a class="dropdown-item"
-                                    href="course?type=COMPUTER_COURSES.php">COMPUTER COURSES</a>
-
-                                <a class="dropdown-item"
-                                    href="course?type=TEACHER_TRAINING_COURSE.php">TEACHER TRAINING COURSE</a>
-                                    
-
+                                <a class="dropdown-item" href="course?type=COMPUTER_COURSES.php">COMPUTER COURSES</a>
+                                <a class="dropdown-item" href="course?type=TEACHER_TRAINING_COURSE.php">TEACHER TRAINING COURSE</a>
                                 <a class="dropdown-item" href="course?type=NIELIT_COURSES.php">NIELIT COURSES</a>
-                                    
-
-                                <a class="dropdown-item"
-                                    href="course?type=BOUTIQUE_COURSES.php">BOUTIQUE COURSES</a>
-
-                                <a class="dropdown-item"
-                                    href="course?type=BEAUTICIAN_COURSES.php">BEAUTICIAN COURSES </a>
-
-                                <a class="dropdown-item" href="course?type=UG_PG_COURSE.php">UG & PG COURSEs </a>                                    
-
+                                <a class="dropdown-item" href="course?type=BOUTIQUE_COURSES.php">BOUTIQUE COURSES</a>
+                                <a class="dropdown-item" href="course?type=BEAUTICIAN_COURSES.php">BEAUTICIAN COURSES </a>
+                                <a class="dropdown-item" href="course?type=UG_PG_COURSE.php">UG & PG COURSEs </a>
                                 <a class="dropdown-item" href="course?type=YOGA_COURSES.php">YOGA  COURSES</a>
-                                   
-
                                 <a class="dropdown-item" href="course?type=NDLM_COURSES.php">NDLM COURSES</a>
-                                    
-
-                                <a class="dropdown-item"
-                                    href="course?type=ADVANCE_COURSES.php">ADVANCE COURSES</a>
-
-
-
-
-
+                                <a class="dropdown-item" href="course?type=ADVANCE_COURSES.php">ADVANCE COURSES</a>
                             </div>
 
                         </li>
 
-
-
-
-
-
-
                         <li class="nav-item dropdown">
-
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-
                                 GET IN TOUCH
-
                             </a>
 
                             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-
                                 <a class="dropdown-item" href="download.php">Downloads</a>
-
                                 <a class="dropdown-item" href="appriciation-letter.php">Appreciation Letters</a>
-                                    
-
                                 <a class="dropdown-item" href="linkage-affiliation.php">Linkage & Affiliation</a>
-                                    
-
                                 <a class="dropdown-item" href="how-to-get-affiliaction.php">How to  Get Affiliation</a>
-                                   
-
                                 <a class="dropdown-item" href="authorized-studycenter.php">Authorized Study Center</a>
-                                    
-
                             </div>
-
                         </li>
 
-
-
-
-
-
-
                         <li class="nav-item dropdown">
-
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-
                                 STUDENT
-
                             </a>
 
                             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-
                                 <a class="dropdown-item" href="student-details.php">Student Information</a>
-                                    
-
                                 <a class="dropdown-item" href="online-result.php">Online Result</a>
-
                                 <a class="dropdown-item" href="studentlogin.php">Student Login</a>
-
                                 <a class="dropdown-item" href="exam-login.php">Exam Login</a>
-
                             </div>
-
                         </li>
 
-
-
-
-
-
-
                         <li class="nav-item dropdown">
-
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-
                                 Center Section
-
                             </a>
 
                             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-
                                 <!---<a class="dropdown-item" href="">Registration Process</a>--->
-
                                 <a class="dropdown-item" href="centerpanel/center-login.php"target="_blank">ASC Login</a>
-                                    
-
                                 <a class="dropdown-item" href="bank-details.php">Our Account (Bank  Details)</a>
-                                   
-
-                                <a class="dropdown-item" href="business-support-system.php">Business Support System</a>
-                                    
-
+                                <a class="dropdown-item" href="business-support-system.php">Business Support System</a>                                    
                                 <a class="dropdown-item" href="rules-regulation.php">SGCSM Rules &  regulation</a>
-                                   
-
                             </div>
-
                         </li>
 
-
-
-
-
-
-
-
-
                         <li class="nav-item dropdown">
-
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-
                                 Franchise
-
                             </a>
 
                             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-
                                 <a class="dropdown-item" href="franchise-online-form.php">Online apply for Franchise</a>
-                                    
-
-                                <a target="_blank" class="dropdown-item"
-                                    href="uploads/pdf/2018-12-09-11-03-20--5c0cf678528f4-_58d607d26ca53.pdf">Off Line Affiliation Form</a>
-                                    
-
+                                <a target="_blank" class="dropdown-item" href="uploads/pdf/2018-12-09-11-03-20--5c0cf678528f4-_58d607d26ca53.pdf">Off Line Affiliation Form</a>
                                 <a class="dropdown-item" href="public-notice.php">Public Notice</a>
-
                             </div>
-
                         </li>
 
-
-
-
-
                         <li class="nav-item dropdown">
-
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
                                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 MORE
                             </a>
 
                             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-
                                 <a class="dropdown-item" href="our-publication.php">Our Publication</a>
                                 <a class="dropdown-item" href="our-gallery.php">Gallery</a>
                                 <a class="dropdown-item" href="placement-cell.php">Placement Cell</a>
                                 <a class="dropdown-item" href="news-events.php">News & Events</a>
                                 <a class="dropdown-item" href="media-coverage.php">Media Coverage</a>
                                 <a class="dropdown-item" href="study-material.php">Our Study Materials</a>
-
                             </div>
 
                         </li>
