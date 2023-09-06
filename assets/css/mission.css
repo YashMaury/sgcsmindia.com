@@ -1,0 +1,23 @@
+.miss{
+    float: right;
+    width: 30%;
+}
+h1{
+    text-align: center;
+    color: rgb(7, 43, 43);
+}
+p{
+    margin-left: 15px;
+}
+.miss2{
+    float: left;
+    width: 40%;
+    height: 40px;
+}
+h2{
+    text-align: center;
+    color: brown;
+}
+h6{
+    float: right;
+}

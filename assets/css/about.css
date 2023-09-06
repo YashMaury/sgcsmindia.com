@@ -1,0 +1,15 @@
+
+.img_deg
+{
+    float: right;
+    width: 20%;
+    height: 30px;
+}
+.pos_cen{
+    position: absolute;
+    width: 70%;
+    left: 15%;
+    top: 20%;
+    background-color: black;
+    padding: 30px;
+}

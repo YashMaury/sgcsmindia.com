@@ -9,6 +9,8 @@
     <link href="https://sgcsmindia.org/templates/assets/style.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/about.css">
+    <link rel="stylesheet" href="assets/css/mission.css">
     
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script type="text/javascript"
@@ -34,8 +36,8 @@
         <div class="container-fluid">
             <div class="col-sm-">
                 <ul>
-                    <li><a href="#"><i class="bi bi-telephone-fill"></i> 8920206335</a></li>
-                    <li><a href="#"><i class="bi bi-envelope-fill"></i> info@sgcsmindia.org</a></li>
+                    <li><a href="#"><i class="bi bi-telephone-fill"></i> 8433377466</a></li>
+                    <li><a href="#"><i class="bi bi-envelope-fill"></i> info@gictindia.org</a></li>
                 </ul>
             </div>
 
@@ -43,8 +45,8 @@
                 <ul>
                     <li><a href="center-login.php" target="_blank">Center Login</a></li>
                     <li><a target="_blank" href="https://tinyurl.com/24am9w39"><i class="bi bi-facebook"></i></a></li>
-                    <li><a target="_blank" href="https://twitter.com/sgcsmindia1"><i class="bi bi-twitter"></i></a></li>
-                    <li><a target="_blank" href="https://www.instagram.com/sgcsmskills/"><i
+                    <li><a target="_blank" href="https://twitter.com/gictindia1"><i class="bi bi-twitter"></i></a></li>
+                    <li><a target="_blank" href="https://www.instagram.com/gictskills/"><i
                                 class="bi bi-instagram"></i></a></li>
                     <li><a target="_blank" href="https://tinyurl.com/2hskutzh"><i class="bi bi-linkedin"></i></a></li>
                     <li><a target="_blank" href="https://tinyurl.com/2p8radb5"><i class="bi bi-youtube"></i></a></li>
