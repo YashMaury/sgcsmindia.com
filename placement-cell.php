@@ -2,8 +2,8 @@
 
 <div class="achivements" style="background: url(assets/images/slide/breadcrumb.jpg);padding: 50px;">
     <div class="sec-title mb-3 text-center">
-        <h2 class="mb-0" style="color:#fff;">OUR PUBLICATION</h2>
-        <p style="color:#fff;">Home / Our Publication</p>
+        <h2 class="mb-0" style="color:#fff;">PLACEMENT CELL</h2>
+        <p style="color:#fff;">Home / Placement Cell</p>
     </div>
     <div class="container">
         <div class="row">
@@ -13,7 +13,7 @@
 
 <section class="container mt-4">
     <div class="sec-title mb-3 text-center">
-        <h1 class="mt-4">Our Publication</h1>
+        <h1 class="mt-4">Placement Cell</h1>
     </div>
 
     <div class="row row-cols-1 row-cols-md-3 g-4">
