@@ -13,22 +13,27 @@
     </div>
 </div>
 
-<form action="" method="post" accept-charset="utf-8">
+<form action="admin/action/student_login_post.php" method="post" accept-charset="utf-8">
     <div class="container content">
         <div class="sec-title mb-3 text-center">
-            <h2 class="mb-0">STUDENT LOGIN</h2>
+            <h2 class="mb-0">STUDENT LOGIN
+            </h2>
         </div>
+        <?php echo $_SESSION["STUDENT_NAME"]; ?>
         <div class="mb-4" align="justify">
             <p>
-                <strong>User Name :</strong> <br />
-                <input type="text" name="user_name" value="" class="form-control" placeholder="User Name" />
+                <strong>Student Email :</strong> <br />
+                <input type="email" name="student_email" value="" class="form-control" placeholder="Student Email" />
             </p>
             <p>
                 <strong>Password :</strong> <br />
-                <input type="password" name="password" value="" class="form-control" placeholder="Password" />
+                <input type="password" name="student_password" value="" class="form-control" placeholder="Password" />
             </p>
             <p>
-                <button class="btn btn-primary">LOGIN</button>
+                If not registered, click <a href="student_registration.php">here</a> to register.
+            </p>
+            <p>
+                <button type="submit" name="submit" class="btn btn-primary">LOGIN</button>
             </p>
         </div>
     </div>

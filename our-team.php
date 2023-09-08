@@ -1,7 +1,7 @@
 <?php include "include/header.php"; ?>
 
 
-<h1>Our Manasement Team </h1>
+<h1 class="mt-4">Our Management Team </h1>
 <section class="container my-4 d-flex justify-content-center">
 
         <div class="row row-cols-1 row-cols-md-4 g-4">
