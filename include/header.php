@@ -1,18 +1,19 @@
-<?php include "constant.php" ;?>
+<?php include "constant.php"; ?>
 <!DOCTYPE html>
 
 <html dir="ltr" lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
 
-    <link href="assets/css/style.css" rel="stylesheet"/>
+    <link href="assets/css/style.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/about.css">
     <link rel="stylesheet" href="assets/css/mission.css">
-    
+
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script type="text/javascript"
         src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
@@ -51,8 +52,9 @@
                     <li><a target="_blank" href=""><i class="bi bi-linkedin"></i></a></li>
                     <li><a target="_blank" href=""><i class="bi bi-youtube"></i></a></li>
                     <li>
-                        <a target="_blank" href="admin/index.php" target="_blank" class="login-top-link">
-                            Admin Login <i style="background:#7297ff; color:#000;" class="bi bi-caret-right-square-fill"></i>
+                        <a target="_blank" href="admin/login.php" target="_blank" class="login-top-link">
+                            Admin Login <i style="background:#7297ff; color:#000;"
+                                class="bi bi-caret-right-square-fill"></i>
                         </a>
                     </li>
                 </ul>
@@ -97,7 +99,7 @@
 
                 <div class="collapse navbar-collapse" id="navbarText">
                     <ul class="navbar-nav mr-auto">
-                        
+
                         <li class="nav-item"><a class="nav-link" href="index.php">HOME</a></li>
 
                         <li class="nav-item dropdown">
@@ -124,12 +126,14 @@
 
                             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                                 <a class="dropdown-item" href="course.php?type=COMPUTER_COURSES">COMPUTER COURSES</a>
-                                <a class="dropdown-item" href="course.php?type=TEACHER_TRAINING_COURSE">TEACHER TRAINING COURSE</a>
+                                <a class="dropdown-item" href="course.php?type=TEACHER_TRAINING_COURSE">TEACHER TRAINING
+                                    COURSE</a>
                                 <a class="dropdown-item" href="course.php?type=NIELIT_COURSES">NIELIT COURSES</a>
                                 <a class="dropdown-item" href="course.php?type=BOUTIQUE_COURSES">BOUTIQUE COURSES</a>
-                                <a class="dropdown-item" href="course.php?type=BEAUTICIAN_COURSES">BEAUTICIAN COURSES </a>
+                                <a class="dropdown-item" href="course.php?type=BEAUTICIAN_COURSES">BEAUTICIAN COURSES
+                                </a>
                                 <a class="dropdown-item" href="course.php?type=UG_PG_COURSE">UG & PG COURSEs </a>
-                                <a class="dropdown-item" href="course.php?type=YOGA_COURSES">YOGA  COURSES</a>
+                                <a class="dropdown-item" href="course.php?type=YOGA_COURSES">YOGA COURSES</a>
                                 <a class="dropdown-item" href="course.php?type=NDLM_COURSES">NDLM COURSES</a>
                                 <a class="dropdown-item" href="course.php?type=ADVANCE_COURSES">ADVANCE COURSES</a>
                             </div>
@@ -146,7 +150,7 @@
                                 <a class="dropdown-item" href="download.php">Downloads</a>
                                 <a class="dropdown-item" href="appriciation-letter.php">Appreciation Letters</a>
                                 <a class="dropdown-item" href="linkage-affiliation.php">Linkage & Affiliation</a>
-                                <a class="dropdown-item" href="how-to-get-affiliaction.php">How to  Get Affiliation</a>
+                                <a class="dropdown-item" href="how-to-get-affiliaction.php">How to Get Affiliation</a>
                                 <a class="dropdown-item" href="authorized-studycenter.php">Authorized Study Center</a>
                             </div>
                         </li>
@@ -174,10 +178,11 @@
 
                             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                                 <!---<a class="dropdown-item" href="">Registration Process</a>--->
-                                <a class="dropdown-item" href="centerpanel/center-login.php"target="_blank">ASC Login</a>
-                                <a class="dropdown-item" href="bank-details.php">Our Account (Bank  Details)</a>
-                                <a class="dropdown-item" href="business-support-system.php">Business Support System</a>                                    
-                                <a class="dropdown-item" href="rules-regulation.php">SGCSM Rules &  regulation</a>
+                                <a class="dropdown-item" href="centerpanel/center-login.php" target="_blank">ASC
+                                    Login</a>
+                                <a class="dropdown-item" href="bank-details.php">Our Account (Bank Details)</a>
+                                <a class="dropdown-item" href="business-support-system.php">Business Support System</a>
+                                <a class="dropdown-item" href="rules-regulation.php">SGCSM Rules & regulation</a>
                             </div>
                         </li>
 
@@ -189,7 +194,9 @@
 
                             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                                 <a class="dropdown-item" href="franchise-online-form.php">Online apply for Franchise</a>
-                                <a target="_blank" class="dropdown-item" href="uploads/pdf/2018-12-09-11-03-20--5c0cf678528f4-_58d607d26ca53.pdf">Off Line Affiliation Form</a>
+                                <a target="_blank" class="dropdown-item"
+                                    href="uploads/pdf/2018-12-09-11-03-20--5c0cf678528f4-_58d607d26ca53.pdf">Off Line
+                                    Affiliation Form</a>
                                 <a class="dropdown-item" href="public-notice.php">Public Notice</a>
                             </div>
                         </li>
