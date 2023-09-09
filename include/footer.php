@@ -129,6 +129,7 @@
 <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 <script type="text/javascript" src="templates/assets/css/engine1/wowslider.js"></script>
 <script type="text/javascript" src="templates/assets/css/engine1/script.js"></script> -->
+<script type="text/javascript" src="assets/js/lightbox.js"></script>
 
 <script>
 
