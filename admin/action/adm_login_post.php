@@ -19,12 +19,13 @@ curl_setopt($client, CURLOPT_TIMEOUT, 4); //timeout in seconds
 curl_setopt($client, CURLOPT_RETURNTRANSFER, true);
 $response = curl_exec($client);
 // curl_close($client);
-//print_r($response);
+// print_r($response);
 $decode = json_decode($response);
-// print_r($decode->data->message);    
+// print_r($decode);
 //  exit();
+// echo "hello00000000";
 if (isset($decode->access_token)) {
-  //echo "hello";
+  // echo "hello";
   $result = JWT::decode($decode->access_token, $SECRET_KEY, array('HS256'));
   // print_r($result);
   $adminID = $result->data->id;
@@ -40,13 +41,14 @@ if (isset($decode->access_token)) {
     $_SESSION["JWT"] = $result;
     $_SESSION['MEMBBER_FROM'] = $result->data->createdOn;
     //print_r($_SESSION['SPONSOR_ID']);
-
-    // header('Location:../adm_dashboard.php');
+    // echo "done";
+    header('Location:../index.php?msg=Login Successful');
   }
 
 } else {
-  $_SESSION["login_faild_msg"] = "Request Failed! Please try again";
-  // header('Location:../index.php');
+  // $_SESSION["login_faild_msg"] = "Request Failed! Please try again";
+  // echo "failed";
+  header('Location:../../index.php?msg=Login Failed! Please try again');
 }
 
 // function giplCurl($api,$postdata){

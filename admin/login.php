@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Admin Login</title>
 </head>
 
 <style>
@@ -58,7 +58,6 @@
             <div class="container content">
                 <div class="sec-title mb-3 text-center">
                     <h2 class="mb-0">Admin Login</h2>
-                    <?php echo $_SESSION["ADMIN_NAME"]; ?>
                 </div>
                 <div class="mb-4" align="justify">
                     <p>

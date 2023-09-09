@@ -20,16 +20,16 @@ $expire_claim = $issuedat_claim + 30; // expire time in seconds
 $database = new Database();
 $db = $database->getConnection();
 
-$login = new Admin($db);
+$admin_login = new Admin($db);
 
 $data = json_decode(file_get_contents("php://input"));
-//print_r($data);
+// print_r($data);
 
-$login->userName = $data->userName;
-$login->password = $data->password;
-//$login->updated_on=date('Y-m-d H:i:s');
+$admin_login->admin_email = $data->admin_email;
+$admin_login->admin_password = $data->admin_password;
+//$admin_login->updated_on=date('Y-m-d H:i:s');
 
-$stmt = $login->adm_login();
+$stmt = $admin_login->adm_login();
 $num = $stmt->rowCount();
 if ($num > 0) {
 

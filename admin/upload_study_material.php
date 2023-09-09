@@ -34,7 +34,7 @@
                                     <!-- <img class="image  icon-shape icon-xxxl bg-light rounded-4"
                                         src="assets/images/icons/bakery.svg" alt="Material"> -->
 
-                                        <input type="file" name="material_file" class="file-input form-control" required>
+                                    <input type="file" name="material_file" class="file-input form-control" required>
                                     <!-- <div class="file-upload position-absolute end-0 top-0 mt-n2 me-n1">
                                         <span class="icon-shape icon-sm rounded-circle bg-white">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12"
@@ -56,12 +56,13 @@
                                 <!-- input -->
                                 <div class="mb-3 col-lg-6">
                                     <label class="form-label">Material Name</label>
-                                    <input type="text" class="form-control" name="material_title" placeholder="Material Name" required>
+                                    <input type="text" class="form-control" name="material_title"
+                                        placeholder="Material Name" required>
                                 </div>
                                 <div class="mb-3 col-lg-6">
                                     <label class="form-label">Material Description</label>
-                                    <textarea type="text" class="form-control" name="material_description" placeholder="Material Description"
-                                        required></textarea>
+                                    <textarea type="text" class="form-control" name="material_description"
+                                        placeholder="Material Description" required></textarea>
                                 </div>
 
                                 <div class="col-lg-12">
@@ -83,22 +84,9 @@
 
 </div>
 
-<script src="assets/libs/flatpickr/dist/flatpickr.min.js"></script>
-<!-- Libs JS -->
-<script src="assets/libs/jquery/dist/jquery.min.js"></script>
-<script src="assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-<script src="assets/libs/simplebar/dist/simplebar.min.js"></script>
-
-<!-- Theme JS -->
-<script src="assets/js/theme.min.js"></script>
 <script src="assets/libs/quill/dist/quill.min.js"></script>
 <script src="assets/js/vendors/editor.js"></script>
 <script src="assets/libs/dropzone/dist/min/dropzone.min.js"></script>
+<script src="assets/libs/flatpickr/dist/flatpickr.min.js"></script>
 
-
-</body>
-
-
-<!-- Mirrored from freshcart.codescandy.com/dashboard/add-category.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 08 Jun 2023 09:54:55 GMT -->
-
-</html>
+<?php include "include/footer.php"; ?>
