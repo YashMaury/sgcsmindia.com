@@ -7,15 +7,15 @@ header("Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers
 require '../../../constant.php';
 include_once '../../config/database.php';
 include_once '../../objects/admin_login.php';
-require '../../../common/php-jwt/src/JWT.php';
-require '../../../common/php-jwt/src/ExpiredException.php';
-require '../../../common/php-jwt/src/SignatureInvalidException.php';
-require '../../../common/php-jwt/src/BeforeValidException.php';
+require '../../../admin/php-jwt/src/JWT.php';
+require '../../../admin/php-jwt/src/ExpiredException.php';
+require '../../../admin/php-jwt/src/SignatureInvalidException.php';
+require '../../../admin/php-jwt/src/BeforeValidException.php';
 use \Firebase\JWT\JWT;
 
- $issuedat_claim = time(); // issued at
- $notbefore_claim = $issuedat_claim ; //not before in seconds
- $expire_claim = $issuedat_claim + 30; // expire time in seconds
+$issuedat_claim = time(); // issued at
+$notbefore_claim = $issuedat_claim; //not before in seconds
+$expire_claim = $issuedat_claim + 30; // expire time in seconds
 
 $database = new Database();
 $db = $database->getConnection();
@@ -31,42 +31,44 @@ $login->password = $data->password;
 
 $stmt = $login->adm_login();
 $num = $stmt->rowCount();
-if($num>0){       
-        
-if ($row = $stmt->fetch(PDO::FETCH_ASSOC)){
-       // var_dump($row);
-        extract($row);
-	$token = array(
-            "iss" => $ISSUER_CLAIM,
-            "aud" => $AUDIENCE_CLAIM,
-            "iat" => $issuedat_claim,
-            "nbf" => $notbefore_claim,
-            "exp" => $expire_claim,
-            "data" => array(
-                "message" => $LOGIN_SUCCESS_MSG,
-                "userName" => $userName,
-                "fullName" =>$fullName,
-                "password" =>$password,
-                "id"=>$id,
-                "createdOn"=>$createdOn
-                
-               
-        ));
-	//var_dump($token);
-   $jwt = JWT::encode($token, $SECRET_KEY);     
-   
-        echo json_encode(
-            array(
-                "access_token" => $jwt
-            ));
+if ($num > 0) {
+
+        if ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
+                // var_dump($row);
+                extract($row);
+                $token = array(
+                        "iss" => $ISSUER_CLAIM,
+                        "aud" => $AUDIENCE_CLAIM,
+                        "iat" => $issuedat_claim,
+                        "nbf" => $notbefore_claim,
+                        "exp" => $expire_claim,
+                        "data" => array(
+                                "message" => $LOGIN_SUCCESS_MSG,
+                                "id" => $id,
+                                "admin_name" => $admin_name,
+                                "admin_email" => $admin_email,
+                                "admin_password" => $admin_password,
+                                "status" => $status,
+                                "createdOn" => $createdOn,
+                                "createdBy" => $createdBy
+
+
+                        )
+                );
+                //var_dump($token);
+                $jwt = JWT::encode($token, $SECRET_KEY);
+
+                echo json_encode(
+                        array(
+                                "access_token" => $jwt
+                        )
+                );
         }
         http_response_code(200);
-}
-
-else{
+} else {
 
         http_response_code(401);
-        echo json_encode(array("message"=>$LOGIN_FAILED_MSG));
+        echo json_encode(array("message" => $LOGIN_FAILED_MSG));
 }
 
 ?>

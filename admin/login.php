@@ -24,6 +24,7 @@
 
     .container {
         padding: 10px;
+        text-align: center;
     }
 
     input {
@@ -32,32 +33,47 @@
         border: 1px solid grey;
         border-radius: 5px;
         padding: 10px;
+        margin-bottom: 10px;
+    }
+
+    .mb-3 {
+        margin-bottom: 3px;
+    }
+
+    button {
+        margin-top: 10px;
+        padding: 10px;
+        border-radius: 5px;
+        color: #fff;
+        background-color: green;
+        width: 100%;
+        border: none;
     }
 </style>
 
 <body>
 
     <div class="container">
-        <form action="admin/action/student_login_post.php" method="post" accept-charset="utf-8">
+        <form action="action/adm_login_post.php" method="post" accept-charset="utf-8">
             <div class="container content">
                 <div class="sec-title mb-3 text-center">
-                    <h2 class="mb-0">STUDENT LOGIN
-                    </h2>
+                    <h2 class="mb-0">Admin Login</h2>
+                    <?php echo $_SESSION["ADMIN_NAME"]; ?>
                 </div>
-                <?php //echo $_SESSION["STUDENT_NAME"]; ?>
                 <div class="mb-4" align="justify">
                     <p>
-                        <strong>Student Email :</strong> <br />
-                        <input type="email" name="student_email" value="" class="form-control"
-                            placeholder="Student Email" />
+                        <strong>Email :</strong> <br />
+                        <input type="email" name="admin_email" value="" class="form-control" placeholder="Email" />
                     </p>
                     <p>
                         <strong>Password :</strong> <br />
-                        <input type="password" name="student_password" value="" class="form-control"
+                        <input type="password" name="admin_password" value="" class="form-control"
                             placeholder="Password" />
                     </p>
                     <p>
-                        If not registered, click <a href="student_registration.php">here</a> to register.
+                        <b>
+                            Forget Password ? Click <a href="#">here</a>
+                        </b>
                     </p>
                     <p>
                         <button type="submit" name="submit" class="btn btn-primary">LOGIN</button>
