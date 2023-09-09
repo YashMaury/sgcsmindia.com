@@ -33,8 +33,7 @@
                     <th>Purchase Date</th>
                     <th>Phone</th>
                     <th>Spent</th>
-
-                    <th></th>
+                    <th>Action</th>
                   </tr>
                 </thead>
                 <tbody>
