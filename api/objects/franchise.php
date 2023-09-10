@@ -11,7 +11,7 @@ class Franchise
         $this->conn = $db;
     }
 
-    public $id, $center_name, $center_director, $center_state, $center_district, $center_block, $center_city, $center_pincode, $center_email, $center_mobile, $center_message, $status, $createdOn, $createdBy;
+    public $id, $center_name, $center_director, $center_state, $center_district, $center_block, $center_city, $center_pincode, $center_email, $center_mobile, $center_message, $status, $createdOn, $createdBy, $updatedOn, $updatedBy;
 
     // public function read_only_examname(){
     //     $query="Select exam_name from " .$this->table_name .  " where exam_name=:exam_name";
@@ -94,17 +94,23 @@ class Franchise
         $query = "UPDATE 
                     " . $this->table_name . "
                 SET
-                            status=:status
-                            WHERE id=:franchise_id";
+                            status=:status,
+                            updatedOn=:updatedOn,
+                            updatedBy=:updatedBy
+                            WHERE id=:id";
 
         // prepare query
         $stmt = $this->conn->prepare($query);
         $this->id = htmlspecialchars(strip_tags($this->id));
         $this->status = htmlspecialchars(strip_tags($this->status));
+        $this->updatedOn = htmlspecialchars(strip_tags($this->updatedOn));
+        $this->updatedBy = htmlspecialchars(strip_tags($this->updatedBy));
 
         //bind values
         $stmt->bindParam(":id", $this->id);
         $stmt->bindParam(":status", $this->status);
+        $stmt->bindParam(":updatedOn", $this->updatedOn);
+        $stmt->bindParam(":updatedBy", $this->updatedBy);
 
         // execute query
         if ($stmt->execute()) {
@@ -114,15 +120,47 @@ class Franchise
         return false;
     }
 
-    // public function read_exam_details(){
-    //     $query="Select  id, exam_name, type, age, total_post, eligibility, amount, status, exam_date_start, exam_date_end, result_date, admit_card_date, created_by, created_on
-    //     from " .$this->table_name . " where exam_name=:exam_name";
-    //     $stmt = $this->conn->prepare($query); 
-    //     $stmt->bindParam(":exam_name", $this->exam_name);
-    //     // $stmt->bindParam(":id", $this->id);
-    //     $stmt->execute();
-    //     return $stmt;
-    // }
+    function rejectFranchise()
+    {
+
+        // query to insert record
+        $query = "UPDATE 
+                    " . $this->table_name . "
+                SET
+                            status=:status,
+                            updatedOn=:updatedOn,
+                            updatedBy=:updatedBy
+                            WHERE id=:id";
+
+        // prepare query
+        $stmt = $this->conn->prepare($query);
+        $this->id = htmlspecialchars(strip_tags($this->id));
+        $this->status = htmlspecialchars(strip_tags($this->status));
+        $this->updatedOn = htmlspecialchars(strip_tags($this->updatedOn));
+        $this->updatedBy = htmlspecialchars(strip_tags($this->updatedBy));
+
+        //bind values
+        $stmt->bindParam(":id", $this->id);
+        $stmt->bindParam(":status", $this->status);
+        $stmt->bindParam(":updatedOn", $this->updatedOn);
+        $stmt->bindParam(":updatedBy", $this->updatedBy);
+
+        // execute query
+        if ($stmt->execute()) {
+            return true;
+        }
+
+        return false;
+    }
+
+    public function readFranchiseByStatus()
+    {
+        $query = "Select id, center_name, center_director, center_state, center_district, center_block, center_city, center_pincode, center_email, center_mobile, center_message, status, createdOn, createdBy, updatedOn, updatedBy from " . $this->table_name . " where status=:status";
+        $stmt = $this->conn->prepare($query);
+        $stmt->bindParam(":status", $this->status);
+        $stmt->execute();
+        return $stmt;
+    }
 
     //  public function read_payment_varify_details(){
     //    $query="Select  reg.id,reg.full_name,reg.registration_no,dob,mobile,reg.exam_name,amount,reg.status,

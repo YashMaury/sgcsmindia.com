@@ -42,12 +42,14 @@ $result = json_decode($response);
                 id="DataTable">
                 <thead class="bg-light">
                   <tr>
+                    <th>Sr no.</th>
                     <th>Name</th>
                     <th>Email</th>
                     <th>Phone</th>
                     <th>Course</th>
                     <th>Registered On</th>
-                    <th>Action</th>
+                    <th>Edit</th>
+                    <th>Delete</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -57,8 +59,10 @@ $result = json_decode($response);
                     $counter = 0;
                     foreach ($result as $key => $value) {
                       foreach ($value as $key1 => $value1) {
+                        ++$counter;
                         ?>
 
+                        <td><?php echo $counter; ?></td>
                         <td>
                           <div class="d-flex align-items-center">
                             <img src="assets/images/avatar/avatar-1.jpg" alt="" class="avatar avatar-xs rounded-circle">
@@ -83,6 +87,9 @@ $result = json_decode($response);
                           <?php echo date("d-M-Y", strtotime($value1->createdOn)); ?>
                         </td>
 
+                        <td>
+                          <button class="btn btn-sm btn-info"><i class="bi bi-pencil me-3"></i>Edit</button>
+                        </td>
                         <td>
                           <button class="btn btn-sm btn-danger"><i class="bi bi-trash me-3"></i>Delete</button>
                         </td>

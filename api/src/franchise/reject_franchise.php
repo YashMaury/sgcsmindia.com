@@ -33,7 +33,7 @@ if(
     $franchise->updatedOn = $data->updatedOn;   
     $franchise->updatedBy = $data->updatedBy;   
 
-    if($franchise->approveFranchise()){
+    if($franchise->rejectFranchise()){
   
         // set response code - 201 created
         http_response_code(201);

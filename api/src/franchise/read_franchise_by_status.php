@@ -20,16 +20,19 @@ $db = $database->getConnection();
 $franchise = new Franchise($db);
 
 $data = json_decode(file_get_contents("php://input"));
+//print_r($data);
 
-$stmt = $franchise->readFranchiseDetails();
+$franchise->status = $data->status;
+
+$stmt = $franchise->readFranchiseByStatus();
 $num = $stmt->rowCount();
 
 // check if more than 0 record found
 if ($num > 0) {
 
     // products array
-    $franchises_arr = array();
-    $franchises_arr["records"] = array();
+    $franchise_arr = array();
+    $franchise_arr["records"] = array();
 
 
     while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
@@ -54,14 +57,13 @@ if ($num > 0) {
             "createdBy" => $createdBy,
             "updatedOn" => $updatedOn,
             "updatedBy" => $updatedBy
-
         );
 
-        array_push($franchises_arr["records"], $franchise_item);
+        array_push($franchise_arr["records"], $franchise_item);
     }
 
     // show products data in json format
-    echo json_encode($franchises_arr);
+    echo json_encode($franchise_arr);
 
     // set response code - 200 OK
     http_response_code(200);
@@ -75,7 +77,7 @@ else {
 
     // tell the user no products found
     echo json_encode(
-        array("message" => "No user found.")
+        array("message" => "No record found")
     );
 }
 ?>

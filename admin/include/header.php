@@ -289,11 +289,16 @@ if (isset($_SESSION["ADMIN_ID"])) {
                                             Registered Franchise List
                                         </a>
                                     </li>
-                                    <!-- <li class="nav-item ">
-                                        <a class="nav-link " href="view_uploaded_image.php">
-                                            View Uploaded Image
+                                    <li class="nav-item ">
+                                        <a class="nav-link " href="view_approved_franchise_list.php">
+                                            Approved Franchise List
                                         </a>
-                                    </li> -->
+                                    </li>
+                                    <li class="nav-item ">
+                                        <a class="nav-link " href="view_rejected_franchise_list.php">
+                                            Rejected Franchise List
+                                        </a>
+                                    </li>
                                 </ul>
                             </div>
                         </li>
@@ -412,11 +417,16 @@ if (isset($_SESSION["ADMIN_ID"])) {
                                             Registered Franchise List
                                         </a>
                                     </li>
-                                    <!-- <li class="nav-item ">
-                                        <a class="nav-link " href="view_uploaded_image.php">
-                                            View Uploaded Image
+                                    <li class="nav-item ">
+                                        <a class="nav-link " href="view_approved_franchise_list.php">
+                                            Approved Franchise List
                                         </a>
-                                    </li> -->
+                                    </li>
+                                    <li class="nav-item ">
+                                        <a class="nav-link " href="view_rejected_franchise_list.php">
+                                            Rejected Franchise List
+                                        </a>
+                                    </li>
                                 </ul>
                             </div>
                         </li>

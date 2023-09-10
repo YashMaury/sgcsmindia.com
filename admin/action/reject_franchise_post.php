@@ -1,33 +1,35 @@
 <?php
 include '../../constant.php';
 
-if(isset($_POST["registration_no"])){
+if (isset($_POST["submit"])) {
 
- $registration_no=strtoupper($_POST["registration_no"]);
- $id=$_POST["id"];
- $status=1;
+    $franchise_id = $_POST["franchise_id"];
+    $status = 2;
+    $updatedOn = date("Y-m-d h:i:s");
+    $updatedBy = "Admin";
 
- $url=$URL. "registration/reg_update_approve.php";
- $data = array("registration_no"=>$registration_no, "id"=>$id, "status"=>$status);
+    $url = $URL . "franchise/reject_franchise.php";
+    $data = array("franchise_id" => $franchise_id, "status" => $status, "updatedOn" => $updatedOn, "updatedBy" => $updatedBy);
 
- //print_r($data);
- $postdata = json_encode($data);
- $result=url_encode_Decode($url,$postdata);
- //print_r($result);
- if($result->message=="Successfull"){
- header('Location:../pending registration_list.php');
- } 
- header('Location:../pending registration_list.php');
- }
+    // print_r($data);
+    $postdata = json_encode($data);
+    $result = url_encode_Decode($url, $postdata);
+    // print_r($result);
+    if ($result->message == "Franchise Updated Successfully") {
+        header('Location:../view_franchise_list.php');
+    }
+    header('Location:../view_franchise_list.php');
+}
 
- function url_encode_Decode($url,$postdata){
- $client = curl_init($url);
- curl_setopt($client, CURLOPT_RETURNTRANSFER, true);
- curl_setopt($client, CURLOPT_POSTFIELDS, $postdata);
- $response = curl_exec($client);
- //print_r($response);
- $result = json_decode($response);
- return $result;
+function url_encode_Decode($url, $postdata)
+{
+    $client = curl_init($url);
+    curl_setopt($client, CURLOPT_RETURNTRANSFER, true);
+    curl_setopt($client, CURLOPT_POSTFIELDS, $postdata);
+    $response = curl_exec($client);
+    // print_r($response);
+    $result = json_decode($response);
+    return $result;
 
 }
 

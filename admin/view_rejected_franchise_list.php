@@ -1,6 +1,6 @@
 <?php
 include "include/header.php";
-$status='0';
+$status='2';
 $url = $URL . "franchise/read_franchise_by_status.php";
 $data = array("status"=>$status);
 //print_r($data);
@@ -21,12 +21,12 @@ $result = json_decode($response);
       <div class="col-md-12">
         <div class="d-md-flex justify-content-between align-items-center">
           <div>
-            <h2>Registered Franchise List</h2>
+            <h2>Rejected Franchise List</h2>
             <!-- breacrumb -->
             <nav aria-label="breadcrumb">
               <ol class="breadcrumb mb-0">
                 <li class="breadcrumb-item"><a href="index.php" class="text-inherit">Dashboard</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Registered Franchise List</li>
+                <li class="breadcrumb-item active" aria-current="page">Rejected Franchise List</li>
               </ol>
             </nav>
           </div>
@@ -55,10 +55,8 @@ $result = json_decode($response);
                     <th>City</th>
                     <th>Pincode</th>
                     <th>Message</th>
-                    <!-- <th>Course</th> -->
                     <th>Registered On</th>
                     <th>Approve</th>
-                    <th>Reject</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -116,13 +114,7 @@ $result = json_decode($response);
                                 class="bi bi-trash me-3"></i>Approve</button>
                           </form>
                         </td>
-                        <td>
-                          <form action="action/reject_franchise_post.php" method="post">
-                            <input type="hidden" name="franchise_id" value="<?php echo $value1->id ?>">
-                            <button type="submit" name="submit" class="btn btn-sm btn-danger"><i
-                                class="bi bi-trash me-3"></i>Reject</button>
-                          </form>
-                        </td>
+                        
                       </tr>
 
                     <?php }
