@@ -19,7 +19,6 @@
             <h2 class="mb-0">STUDENT LOGIN
             </h2>
         </div>
-        <?php echo $_SESSION["STUDENT_NAME"]; ?>
         <div class="mb-4" align="justify">
             <p>
                 <strong>Student Email :</strong> <br />
