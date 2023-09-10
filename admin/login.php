@@ -9,45 +9,72 @@
 
 <style>
     * {
-        margin: 0;
         padding: 0;
+        margin: 0;
         box-sizing: border-box;
     }
 
-    body {
-        width: 100vw;
+    .container {
+        width: 100%;
         height: 100vh;
         display: flex;
         justify-content: center;
         align-items: center;
+        flex-wrap: wrap;
+        background-color: rgb(199, 222, 230);
     }
 
-    .container {
-        padding: 10px;
+    .login {
+        border-top: 4px solid blue;
+        border-radius: 4px;
+        box-sizing: border-box;
+        box-shadow: 8px 8px 8px rgba(255, 160, 255, 0.2);
+        background-color: white;
         text-align: center;
-    }
-
-    input {
+        font-family: Arial, Helvetica, sans-serif;
         width: 400px;
+
+    }
+
+    .login h1 {
+        margin: 20px;
+    }
+
+    .login h1 b {
+        font-weight: bolder;
+    }
+
+    .login p {
+        margin: 20px;
+    }
+
+    .inp input {
+        width: 300px;
         height: 40px;
-        border: 1px solid grey;
         border-radius: 5px;
-        padding: 10px;
-        margin-bottom: 10px;
+        border: 1px solid #999;
+        margin: 10px 0px;
+        padding-left: 10px;
     }
 
-    .mb-3 {
-        margin-bottom: 3px;
+    .lg {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 40px;
     }
 
-    button {
-        margin-top: 10px;
-        padding: 10px;
-        border-radius: 5px;
-        color: #fff;
-        background-color: green;
-        width: 100%;
+    .lg a {
+        text-decoration: none;
+        padding-left: -50px;
+        padding: 20px;
+    }
+
+    #Sign {
+        padding: 20px;
+        background-color: rgb(0, 79, 250);
         border: none;
+        border-radius: 4px;
+        color: white;
     }
 </style>
 
@@ -55,31 +82,26 @@
 
     <div class="container">
         <form action="action/adm_login_post.php" method="post" accept-charset="utf-8">
-            <div class="container content">
-                <div class="sec-title mb-3 text-center">
-                    <h2 class="mb-0">Admin Login</h2>
-                </div>
-                <div class="mb-4" align="justify">
-                    <p>
-                        <strong>Email :</strong> <br />
-                        <input type="email" name="admin_email" value="" class="form-control" placeholder="Email" />
-                    </p>
-                    <p>
-                        <strong>Password :</strong> <br />
-                        <input type="password" name="admin_password" value="" class="form-control"
-                            placeholder="Password" />
-                    </p>
-                    <p>
-                        <b>
-                            Forget Password ? Click <a href="#">here</a>
-                        </b>
-                    </p>
-                    <p>
-                        <button type="submit" name="submit" class="btn btn-primary">LOGIN</button>
-                    </p>
-                </div>
+            <h1 align="center">Admin Login</h1>
+            <div class="inp">
+                <strong>Email :</strong> <br />
+                <input type="email" name="admin_email" value="" class="form-control" placeholder="Email" />
+                <br />
+                <strong>Password :</strong> <br />
+                <input type="password" name="admin_password" value="" class="form-control" placeholder="Password" />
             </div>
-        </form>
+            <div class="lg">
+                <p>
+                    <b>
+                        Forget Password ? Click <a href="#">here</a>
+                    </b>
+                </p>
+                <p>
+                    <button type="submit" name="submit" class="btn btn-primary">LOGIN</button>
+                </p>
+            </div>
+    </div>
+    </form>
     </div>
 
 
