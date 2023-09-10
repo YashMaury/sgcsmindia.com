@@ -65,7 +65,7 @@
 <section class="container">
 
   <center class="mt-4">
-    <img src="web image/light__5_-removebg-preview.png" alt="">
+    <img src="web image/courses.png" alt="">
   </center>
 
   <div class="d-flex mt-4">
@@ -77,7 +77,7 @@
 <section class="container">
 
   <center class="mt-4">
-    <img src="web image/courses.png" alt="">
+    <img src="web image/achivment.png" alt="">
   </center>
 
   <div class="d-flex gap-2 mt-4">
@@ -91,7 +91,7 @@
 <section class="container">
 
   <center class="mt-4">
-    <img src="" alt="">
+    <img src="web image/our courses.png" alt="">
   </center>
 
   <div class="d-flex gap-2 mt-4">
