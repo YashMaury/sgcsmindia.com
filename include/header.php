@@ -66,22 +66,20 @@
     <header class="navbar navbar-dark px-5" id="header">
         <div class="container-fluid">
 
-            <div class="col-sm-6">
-                <div class="logo">
+            <div class="col-sm-9">
+                <div class="logo d-flex">
                     <a href="index.php">
-                        <img class="img-fluid" src="assets/images/logo1.png">
+                        <img class="img-fluid" src="web image/logo 1.png">
                     </a>
+                    <div>
+                        <h1 style="color: red; letter-spacing:20px;"><b>GICT COMPUTER</b></h1>
+                        <p style="color:blue;text-align:center; letter-spacing:14px;">College of IT & Management</p>
+                    </div>
                 </div>
             </div>
 
-            <div class="col-sm-3">
+            <div class="col-sm-3 d-flex justify-content-end">
                 <div id="google_translate_element"></div>
-            </div>
-
-            <div class="col-sm-3">
-                <span style="font-size: 16px;background:#761919;padding:10px;color:#fff;">We Are Open <i
-                        class="bi bi-calendar-date-fill"></i> Mon-Sat <i class="bi bi-clock-fill"></i> 9:00-06:30
-                </span>
             </div>
 
         </div>

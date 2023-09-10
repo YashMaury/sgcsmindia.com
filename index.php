@@ -5,13 +5,20 @@
   <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img src="assets/images/beauty2.webp" class="d-block w-100" alt="...">
+        <img src="web image/1.png" class="d-block w-100" alt="...">
       </div>
       <div class="carousel-item">
-        <img src="assets/images/beauty1.jpg" class="d-block w-100" alt="...">
+        <img src="web image/2.png" class="d-block w-100" alt="...">
       </div>
       <div class="carousel-item">
-        <img src="assets/images/computer1.jpeg" class="d-block w-100" alt="...">
+        <img src="web image/3.png" class="d-block w-100" alt="...">
+      </div>
+
+      <div class="carousel-item">
+        <img src="web image/4.png" class="d-block w-100" alt="...">
+      </div>
+      <div class="carousel-item">
+        <img src="web image/5.png" class="d-block w-100" alt="...">
       </div>
     </div>
     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
@@ -62,14 +69,7 @@
   </center>
 
   <div class="d-flex mt-4">
-    <div class="">
-      <img class="w-100 img-fluid" src="assets/images/gict/1.png" alt="">
-      <img class="w-100 img-fluid" src="assets/images/gict/2.png" alt="">
-      <img class="w-100 img-fluid" src="assets/images/gict/3.png" alt="">
-      <img class="w-100 img-fluid" src="assets/images/gict/4.png" alt="">
-      <img class="w-100 img-fluid" src="assets/images/gict/5.png" alt="">
-    </div>
-    <img class="img-fluid w-50" src="assets/images/gict/side-1.jfif" alt="">
+    <img src="web image/sfdghn (1).png" class="img-fluid" alt="">
   </div>
 
 </section>
