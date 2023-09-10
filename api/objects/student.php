@@ -207,16 +207,16 @@ class Student
 
     // }
 
-    // //read registerd farmers
-    // function readFarmers(){
-    //     $query="Select id, farmerName, farmerMobile, farmerDistrict, farmerMsg, status, createdOn, createdBy  from " .$this->farmerregistration;
-    //     $stmt = $this->conn->prepare($query); 
-    //     // $stmt->bindParam(":email", $this->email);
-    //     // $stmt->bindParam(":password", $this->password);
+    //read registerd farmers
+    function readStudent(){
+        $query="Select id, student_name, student_mobile , course, student_email, student_password, status, createdOn, createdBy  from " .$this->student_registration;
+        $stmt = $this->conn->prepare($query); 
+        // $stmt->bindParam(":email", $this->email);
+        // $stmt->bindParam(":password", $this->password);
 
-    //     $stmt->execute();
-    //     return $stmt;
-    // }
+        $stmt->execute();
+        return $stmt;
+    }
 
     // function read_reg_maxId(){
     //     $query="Select max(id) as id from " . $this->table_name ."";

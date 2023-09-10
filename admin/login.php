@@ -81,27 +81,22 @@
 <body>
 
     <div class="container">
-        <form action="action/adm_login_post.php" method="post" accept-charset="utf-8">
-            <h1 align="center">Admin Login</h1>
-            <div class="inp">
-                <strong>Email :</strong> <br />
-                <input type="email" name="admin_email" value="" class="form-control" placeholder="Email" />
-                <br />
-                <strong>Password :</strong> <br />
-                <input type="password" name="admin_password" value="" class="form-control" placeholder="Password" />
-            </div>
-            <div class="lg">
-                <p>
-                    <b>
-                        Forget Password ? Click <a href="#">here</a>
-                    </b>
-                </p>
-                <p>
-                    <button type="submit" name="submit" class="btn btn-primary">LOGIN</button>
-                </p>
-            </div>
-    </div>
-    </form>
+        <div class="login">
+            <form action="action/adm_login_post.php" method="post" accept-charset="utf-8">
+                <h1 align="center">Admin Login</h1>
+                <div class="inp">
+                    <strong>Email :</strong> <br />
+                    <input type="email" name="admin_email" value="" class="form-control" placeholder="Email" />
+                    <br />
+                    <strong>Password :</strong> <br />
+                    <input type="password" name="admin_password" value="" class="form-control" placeholder="Password" />
+                </div>
+                <div class="lg">
+                    <a href="#">Forget Password ?</a>
+                    <button type="submit" id="Sign" name="submit" class="btn btn-primary">LOGIN</button>
+                </div>
+            </form>
+        </div>
     </div>
 
 
