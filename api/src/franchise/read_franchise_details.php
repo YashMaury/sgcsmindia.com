@@ -38,6 +38,7 @@ if ($num > 0) {
 
         $franchise_item = array(
 
+            "id" => $id,
             "center_name" => $center_name,
             "center_director" => $center_director,
             "center_state" => $center_state,

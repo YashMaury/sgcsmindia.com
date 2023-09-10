@@ -55,7 +55,8 @@ $result = json_decode($response);
                     <th>Message</th>
                     <!-- <th>Course</th> -->
                     <th>Registered On</th>
-                    <th>Action</th>
+                    <th>Approve</th>
+                    <th>Reject</th>
                   </tr>
                 </thead>
                 <tbody>
@@ -107,8 +108,16 @@ $result = json_decode($response);
                         </td>
 
                         <td>
-                          <button class="btn btn-sm btn-success"><i class="bi bi-trash me-3"></i>Approve</button>
-                          <button class="btn btn-sm btn-danger"><i class="bi bi-trash me-3"></i>Delete</button>
+                          <form action="action/approve_franchise_post.php" method="post">
+                            <input type="hidden" name="franchise_id" value="<?php echo $value1->id ?>">
+                            <button type="submit" name="submit" class="btn btn-sm btn-success"><i class="bi bi-trash me-3"></i>Approve</button>
+                          </form>
+                        </td>
+                        <td>
+                          <form action="action/reject_franchise_post.php" method="post">
+                            <input type="hidden" name="franchise_id" value="<?php echo $value1->id ?>">
+                            <button type="submit" name="submit" class="btn btn-sm btn-danger"><i class="bi bi-trash me-3"></i>Reject</button>
+                          </form>
                         </td>
                       </tr>
 
