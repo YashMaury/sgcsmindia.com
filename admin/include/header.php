@@ -276,6 +276,29 @@ if (isset($_SESSION["ADMIN_ID"])) {
 
                         <li class="nav-item">
                             <a class="nav-link collapsed " href="#" data-bs-toggle="collapse"
+                                data-bs-target="#navRegisteredFranchise" aria-expanded="false" aria-controls="navRegisteredFranchise">
+                                <div class="d-flex align-items-center">
+                                    <span class="nav-link-icon"> <i class="bi bi-bag"></i></span>
+                                    <span class="nav-link-text">Franchise</span>
+                                </div>
+                            </a>
+                            <div id="navRegisteredFranchise" class="collapse " data-bs-parent="#sideNavbar">
+                                <ul class="nav flex-column">
+                                    <li class="nav-item ">
+                                        <a class="nav-link " href="view_franchise_list.php">
+                                            Registered Franchise List
+                                        </a>
+                                    </li>
+                                    <!-- <li class="nav-item ">
+                                        <a class="nav-link " href="view_uploaded_image.php">
+                                            View Uploaded Image
+                                        </a>
+                                    </li> -->
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link collapsed " href="#" data-bs-toggle="collapse"
                                 data-bs-target="#navStudentSection" aria-expanded="false" aria-controls="navStudentSection">
                                 <div class="d-flex align-items-center">
                                     <span class="nav-link-icon"> <i class="bi bi-bag"></i></span>
@@ -374,6 +397,29 @@ if (isset($_SESSION["ADMIN_ID"])) {
                             <span class="nav-label">Site Managements</span>
                         </li>
 
+                        <li class="nav-item">
+                            <a class="nav-link collapsed " href="#" data-bs-toggle="collapse"
+                                data-bs-target="#navRegisteredFranchise" aria-expanded="false" aria-controls="navRegisteredFranchise">
+                                <div class="d-flex align-items-center">
+                                    <span class="nav-link-icon"> <i class="bi bi-bag"></i></span>
+                                    <span class="nav-link-text">Franchise</span>
+                                </div>
+                            </a>
+                            <div id="navRegisteredFranchise" class="collapse " data-bs-parent="#sideNavbar">
+                                <ul class="nav flex-column">
+                                    <li class="nav-item ">
+                                        <a class="nav-link " href="view_franchise_list.php">
+                                            Registered Franchise List
+                                        </a>
+                                    </li>
+                                    <!-- <li class="nav-item ">
+                                        <a class="nav-link " href="view_uploaded_image.php">
+                                            View Uploaded Image
+                                        </a>
+                                    </li> -->
+                                </ul>
+                            </div>
+                        </li>
                         <li class="nav-item">
                             <a class="nav-link collapsed " href="#" data-bs-toggle="collapse"
                                 data-bs-target="#navStudentSection" aria-expanded="false" aria-controls="navStudentSection">

@@ -17,16 +17,16 @@
         <h2 class="mb-0">FRANCHISE ONLINE FORM</h2>
     </div>
     <div class="mb-4" align="justify">
-        <form action="https://sgcsmindia.org/franchise_online_form" method="post" accept-charset="utf-8">
+        <form action="admin/action/franchise_registration_post.php" method="post" accept-charset="utf-8">
             <div class="row">
                 <div class="col-sm-6">
                     <p>NAME OF THE STUDY CENTER :<br />
                         <input type="text" name="center_name" value="" class="form-control" />
                     </p>
                     <p>STATE :<br />
-                        <select name="state" class=form-control>
+                        <select name="center_state" class=form-control>
                             <optgroup label="">
-                                <option value=" ">Select state</option>
+                                <option value="">Select state</option>
                                 <option value="Andhra Pradesh">Andhra Pradesh</option>
                                 <option value="Arunachal Pradesh">Arunachal Pradesh</option>
                                 <option value="Assam">Assam</option>
@@ -67,34 +67,34 @@
                         </select>
                     </p>
                     <p>BLOCK :<br />
-                        <input type="text" name="block" value="" class="form-control" />
+                        <input type="text" name="center_block" value="" class="form-control" />
                     </p>
                     <p>PIN CODE :<br />
-                        <input type="text" name="pin_code" value="" class="form-control" />
+                        <input type="text" name="center_pincode" value="" class="form-control" />
                     </p>
                     <p>PH./ MOBILE (STD CODE) :<br />
-                        <input type="text" name="mobile" value="" class="form-control" />
+                        <input type="text" name="center_mobile" value="" class="form-control" />
                     </p>
                 </div>
                 <div class="col-sm-6">
                     <p>CENTER HEAD / DIRECTOR'S NAME :<br />
-                        <input type="text" name="director_name" value="" class="form-control" />
+                        <input type="text" name="center_director" value="" class="form-control" />
                     </p>
                     <p>DISTT :<br />
-                        <input type="text" name="district" value="" class="form-control" />
+                        <input type="text" name="center_district" value="" class="form-control" />
                     </p>
                     <p>City :<br />
-                        <input type="text" name="city" value="" class="form-control" />
+                        <input type="text" name="center_city" value="" class="form-control" />
                     </p>
                     <p>E-MAIL :<br />
-                        <input type="text" name="email" value="" class="form-control" />
+                        <input type="email" name="center_email" value="" class="form-control" />
                     </p>
                 </div>
                 <div class="col-sm-12">
                     <p>Message :<br />
-                        <textarea cols="40" rows="10" class="textarea form-control" name="message"></textarea>
+                        <textarea cols="40" rows="10" class="textarea form-control" name="center_message"></textarea>
                     </p>
-                    <p><input type="submit" name="" class="btn btn-primary" name=""></p>
+                    <p><button type="submit" name="submit" class="btn btn-primary">Submit</button></p>
 
                 </div>
 
