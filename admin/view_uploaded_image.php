@@ -22,12 +22,12 @@ $result = json_decode($response);
       <div class="col-md-12">
         <!-- page header -->
         <div>
-          <h2>Order List</h2>
+          <h2>Image Gallery List</h2>
           <!-- breacrumb -->
           <nav aria-label="breadcrumb">
             <ol class="breadcrumb mb-0">
               <li class="breadcrumb-item"><a href="index.php">Dashboard</a></li>
-              <li class="breadcrumb-item active" aria-current="page">Order List</li>
+              <li class="breadcrumb-item active" aria-current="page">Image Gallery List</li>
             </ol>
           </nav>
 

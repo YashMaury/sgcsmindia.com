@@ -285,7 +285,7 @@ if (isset($_SESSION["ADMIN_ID"])) {
                             <div id="navStudentSection" class="collapse " data-bs-parent="#sideNavbar">
                                 <ul class="nav flex-column">
                                     <li class="nav-item ">
-                                        <a class="nav-link " href="students_list.php">
+                                        <a class="nav-link " href="view_students_list.php">
                                             Registered Students List
                                         </a>
                                     </li>

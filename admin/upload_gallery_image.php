@@ -55,8 +55,8 @@
                             <div class="row">
                                 <!-- input -->
                                 <div class="mb-3 col-lg-6">
-                                    <label class="form-label">Image Name</label>
-                                    <input type="text" class="form-control" name="image_title" placeholder="Image Name"
+                                    <label class="form-label">Image Title</label>
+                                    <input type="text" class="form-control" name="image_title" placeholder="Image Title"
                                         required>
                                 </div>
                                 <div class="mb-3 col-lg-6">

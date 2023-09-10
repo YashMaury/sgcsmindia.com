@@ -19,12 +19,12 @@ $result = json_decode($response);
       <div class="col-md-12">
         <div class="d-md-flex justify-content-between align-items-center">
           <div>
-            <h2>Customers</h2>
+            <h2>Registered Students List</h2>
             <!-- breacrumb -->
             <nav aria-label="breadcrumb">
               <ol class="breadcrumb mb-0">
                 <li class="breadcrumb-item"><a href="index.php" class="text-inherit">Dashboard</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Customers</li>
+                <li class="breadcrumb-item active" aria-current="page">Registered Students List</li>
               </ol>
             </nav>
           </div>
