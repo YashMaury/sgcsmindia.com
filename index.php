@@ -47,7 +47,7 @@
 <section class="container">
 
   <center class="mt-4">
-    <img src="assets/images/text/welcome.jpg" alt="">
+    <img src="web image/welcome gitc.png" alt="">
   </center>
   <br />
   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae necessitatibus, porro earum obcaecati sed dolor
@@ -65,7 +65,7 @@
 <section class="container">
 
   <center class="mt-4">
-    <img src="assets/images/text/courses.jpg" alt="">
+    <img src="web image/light__5_-removebg-preview.png" alt="">
   </center>
 
   <div class="d-flex mt-4">
@@ -77,7 +77,7 @@
 <section class="container">
 
   <center class="mt-4">
-    <img src="assets/images/text/acheivments.jpg" alt="">
+    <img src="web image/courses.png" alt="">
   </center>
 
   <div class="d-flex gap-2 mt-4">
@@ -91,7 +91,7 @@
 <section class="container">
 
   <center class="mt-4">
-    <img src="assets/images/text/course.jpg" alt="">
+    <img src="" alt="">
   </center>
 
   <div class="d-flex gap-2 mt-4">
