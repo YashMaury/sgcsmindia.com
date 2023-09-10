@@ -28,6 +28,91 @@ class Franchise
         $stmt->execute();
         return $stmt;
     }
+    public function insertFranchise()
+    {
+
+        $query = "INSERT INTO
+        " . $this->table_name . "
+        SET
+             center_name=:center_name,
+             center_director=:center_director,
+             center_state=:center_state,
+             center_district=:center_district,
+             center_block=:center_block,
+             center_city=:center_city,
+             center_pincode=:center_pincode,
+             center_email=:center_email,
+             center_mobile=:center_mobile,
+             center_message=:center_message,
+             status=:status,
+             createdOn=:createdOn,
+             createdBy=:createdBy
+               ";
+
+        $stmt = $this->conn->prepare($query);
+        $this->center_name = htmlspecialchars(strip_tags($this->center_name));
+        $this->center_director = htmlspecialchars(strip_tags($this->center_director));
+        $this->center_state = htmlspecialchars(strip_tags($this->center_state));
+        $this->center_district = htmlspecialchars(strip_tags($this->center_district));
+        $this->center_block = htmlspecialchars(strip_tags($this->center_block));
+        $this->center_city = htmlspecialchars(strip_tags($this->center_city));
+        $this->center_pincode = htmlspecialchars(strip_tags($this->center_pincode));
+        $this->center_email = htmlspecialchars(strip_tags($this->center_email));
+        $this->center_mobile = htmlspecialchars(strip_tags($this->center_mobile));
+        $this->center_message = htmlspecialchars(strip_tags($this->center_message));
+        $this->status = htmlspecialchars(strip_tags($this->status));
+        $this->createdBy = htmlspecialchars(strip_tags($this->createdBy));
+        $this->createdOn = htmlspecialchars(strip_tags($this->createdOn));
+
+
+        $stmt->bindParam(":center_name", $this->center_name);
+        $stmt->bindParam(":center_director", $this->center_director);
+        $stmt->bindParam(":center_state", $this->center_state);
+        $stmt->bindParam(":center_district", $this->center_district);
+        $stmt->bindParam(":center_block", $this->center_block);
+        $stmt->bindParam(":center_city", $this->center_city);
+        $stmt->bindParam(":center_pincode", $this->center_pincode);
+        $stmt->bindParam(":center_email", $this->center_email);
+        $stmt->bindParam(":center_mobile", $this->center_mobile);
+        $stmt->bindParam(":center_message", $this->center_message);
+        $stmt->bindParam(":status", $this->status);
+        $stmt->bindParam(":createdBy", $this->createdBy);
+        $stmt->bindParam(":createdOn", $this->createdOn);
+
+        // execute query
+        if ($stmt->execute()) {
+            return true;
+        }
+
+        return false;
+    }
+
+    function approveFranchise()
+    {
+
+        // query to insert record
+        $query = "UPDATE 
+                    " . $this->table_name . "
+                SET
+                            status=:status
+                            WHERE id=:franchise_id";
+
+        // prepare query
+        $stmt = $this->conn->prepare($query);
+        $this->id = htmlspecialchars(strip_tags($this->id));
+        $this->status = htmlspecialchars(strip_tags($this->status));
+
+        //bind values
+        $stmt->bindParam(":id", $this->id);
+        $stmt->bindParam(":status", $this->status);
+
+        // execute query
+        if ($stmt->execute()) {
+            return true;
+        }
+
+        return false;
+    }
 
     // public function read_exam_details(){
     //     $query="Select  id, exam_name, type, age, total_post, eligibility, amount, status, exam_date_start, exam_date_end, result_date, admit_card_date, created_by, created_on
@@ -93,93 +178,6 @@ class Franchise
     //     return $stmt;
     // }
 
-    public function insertFranchise()
-    {
-
-        $query = "INSERT INTO
-        " . $this->table_name . "
-        SET
-             center_name=:center_name,
-             center_director=:center_director,
-             center_state=:center_state,
-             center_district=:center_district,
-             center_block=:center_block,
-             center_city=:center_city,
-             center_pincode=:center_pincode,
-             center_email=:center_email,
-             center_mobile=:center_mobile,
-             center_message=:center_message,
-             status=:status,
-             createdOn=:createdOn,
-             createdBy=:createdBy
-               ";
-
-        $stmt = $this->conn->prepare($query);
-        $this->center_name = htmlspecialchars(strip_tags($this->center_name));
-        $this->center_director = htmlspecialchars(strip_tags($this->center_director));
-        $this->center_state = htmlspecialchars(strip_tags($this->center_state));
-        $this->center_district = htmlspecialchars(strip_tags($this->center_district));
-        $this->center_block = htmlspecialchars(strip_tags($this->center_block));
-        $this->center_city = htmlspecialchars(strip_tags($this->center_city));
-        $this->center_pincode = htmlspecialchars(strip_tags($this->center_pincode));
-        $this->center_email = htmlspecialchars(strip_tags($this->center_email));
-        $this->center_mobile = htmlspecialchars(strip_tags($this->center_mobile));
-        $this->center_message = htmlspecialchars(strip_tags($this->center_message));
-        $this->status = htmlspecialchars(strip_tags($this->status));
-        $this->createdBy = htmlspecialchars(strip_tags($this->createdBy));
-        $this->createdOn = htmlspecialchars(strip_tags($this->createdOn));
-
-
-        $stmt->bindParam(":center_name", $this->center_name);
-        $stmt->bindParam(":center_director", $this->center_director);
-        $stmt->bindParam(":center_state", $this->center_state);
-        $stmt->bindParam(":center_district", $this->center_district);
-        $stmt->bindParam(":center_block", $this->center_block);
-        $stmt->bindParam(":center_city", $this->center_city);
-        $stmt->bindParam(":center_pincode", $this->center_pincode);
-        $stmt->bindParam(":center_email", $this->center_email);
-        $stmt->bindParam(":center_mobile", $this->center_mobile);
-        $stmt->bindParam(":center_message", $this->center_message);
-        $stmt->bindParam(":status", $this->status);
-        $stmt->bindParam(":createdBy", $this->createdBy);
-        $stmt->bindParam(":createdOn", $this->createdOn);
-
-        // execute query
-        if ($stmt->execute()) {
-            return true;
-        }
-
-        return false;
-    }
-
-        function reg_update_approve(){
-
-        // query to insert record
-       $query = "UPDATE 
-                    " . $this->table_name . "
-                SET
-                            status=:status
-                            WHERE id=:id and registration_no=:registration_no"; 
-
-        // prepare query
-        $stmt = $this->conn->prepare($query);
-        $this->id=htmlspecialchars(strip_tags($this->id));
-        $this->status=htmlspecialchars(strip_tags($this->status));
-        $this->registration_no=htmlspecialchars(strip_tags($this->registration_no));
-
-        //bind values
-        $stmt->bindParam(":id", $this->id);
-        $stmt->bindParam(":status", $this->status);
-        $stmt->bindParam(":registration_no", $this->registration_no);
-
-
-        // execute query
-        if($stmt->execute()){
-            return true;
-        }
-
-        return false;     
-    }
 
     //     function update_exam(){
 
