@@ -152,7 +152,34 @@ class Franchise
         return false;
     }
 
+        function reg_update_approve(){
 
+        // query to insert record
+       $query = "UPDATE 
+                    " . $this->table_name . "
+                SET
+                            status=:status
+                            WHERE id=:id and registration_no=:registration_no"; 
+
+        // prepare query
+        $stmt = $this->conn->prepare($query);
+        $this->id=htmlspecialchars(strip_tags($this->id));
+        $this->status=htmlspecialchars(strip_tags($this->status));
+        $this->registration_no=htmlspecialchars(strip_tags($this->registration_no));
+
+        //bind values
+        $stmt->bindParam(":id", $this->id);
+        $stmt->bindParam(":status", $this->status);
+        $stmt->bindParam(":registration_no", $this->registration_no);
+
+
+        // execute query
+        if($stmt->execute()){
+            return true;
+        }
+
+        return false;     
+    }
 
     //     function update_exam(){
 
