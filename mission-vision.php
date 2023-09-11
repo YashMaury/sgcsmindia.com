@@ -19,14 +19,26 @@
         <div class="col-sm-8">
             <h3>Mission & Vision</h3>
             <div>
-                Sanjay Gandhi Computer Saksharta Mission Trust has been registered under the Public Trust Act 1882,
-                (Reg.No.2327) from Govt. Of India N.C.T., Delhi, working in different fields of Programme & Commercial
-                Training Organization is also certified by ISO 9001: 2015 Org. Through the Govt. is taking major steps
-                in influencing the computer education in the country but the participation of NGO's in spreading this
-                vital utility technical education can't be denied. After a through survey it was found that there is a
-                lot of awareness of computers even in the remotest of areas but the general public can't be equipped
-                with the art firstly due to unaffordable charges laid down by big private computer centers and also that
-                the general public have some misconception in their mind about learning computers.
+>>GICT Computer empower individuals with the knowledge and skills necessary to excel in the field of computer science and information technology.<br>
+>>GICT Computer promote computer literacy and digital competency among students and the community at large.<br>
+>>GICT Computer foster a culture of innovation, creativity, and problem-solving in the realm of technology.<br>
+>>GICT Computer bridge the digital divide by providing accessible and affordable computer education to all.<br>
+>>GICT Computer prepare students for a dynamic and ever-changing technology landscape by offering up-to-date curriculum and training.<br>
+>>GICT Computer instill a strong sense of ethics and responsibility in students, emphasizing the ethical use of technology.<br>
+>>GICT Computer facilitate research and development in cutting-edge technologies and contribute to technological advancements.<br>
+>>GICT Computer offer a diverse range of courses and programs catering to the varied needs and interests of students.<br>
+>>GICT Computer create a supportive and inclusive learning environment that encourages collaboration and teamwork.<br>
+>>GICT Computer provide industry-relevant certifications and credentials to enhance the employability of our graduates.<br>
+>>GICT Computer continually assess and improve our teaching methods and curriculum based on industry feedback and emerging trends.<br>
+>>GICT Computer establish partnerships with local businesses and industries for internships, job placements, and collaborative projects.<br>
+>>GICT Computer cultivate a culture of lifelong learning, encouraging alumni and the community to continue their education.<br>
+>>GICT Computer engage in community outreach programs that promote digital literacy and technology awareness.<br>
+>>GICT Computer promote diversity and inclusion in the tech industry by actively encouraging underrepresented groups to pursue computer education.<br>
+>>GICT Computer support entrepreneurship and innovation by offering resources and guidance to aspiring tech entrepreneurs.<br>
+>>GICT Computer nurture leadership skills and entrepreneurial spirit among students, encouraging them to become future industry leaders.<br>
+>>GICT Computer contribute to the economic development of the region by producing a skilled workforce for the tech sector.<br>
+>>GICT Computer uphold high academic and ethical standards, ensuring the quality and integrity of our programs.<br>
+>>GICT Computer inspire a passion for technology and computer science that goes beyond the classroom, driving students to make a positive impact on society through their knowledge and skills.<br>rs.
             </div>
         </div>
 
