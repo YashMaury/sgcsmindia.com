@@ -15,22 +15,31 @@
 
 <div class="container mt-4">
     <center>
-        <h1>Our Dream</h1>
+        <h1>ADVANTAGE</h1>
     </center>
     <div class="miss">
         <img src="assets/images/our dream.jpeg" alt="">
     </div>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        Dolor enim perspiciatis ipsam rerum architecto adipisci
-        Quo suscipit modi doloribus magnam quibusdam ex assumenda,
-        Quo suscipit modi doloribus magnam quibusdam ex assumenda,
-        vel perferendis a. Vero a esse error voluptate, praesentium 
-        Reiciendis quibusdam exercitationem cum aliquid aut eligendi
-        Et fuga repudiandae voluptatem nesciunt labore veniam ipsam est
-        Similique eaque dolore quis nostrum accusantium. Facilis quibusdam
-        Porro illum ipsa dolor sequi corporis quisquam vero, iste nostrum 
-        Assumenda. Aut incidunt sequi, a eaque qui culpa delectus doloribus
-        Est autem eum repellat repellendus, non iste enim vitae nemo veritatisc
-        Eius quos excepturi illum, voluptatem magni tenetur unde ad! Quasi id sit impedit!</p>
+    <p>
+<b>Skills Development:</b> Provides students with practical skills in computer science and technology.<br>
+<b>High Demand:</b>  Computer skills are in high demand, increasing employability.<br>
+<b>Diverse Career Opportunities:</b>  Opens doors to various tech-related careers.<br>
+<b>Innovation:</b>  Fosters a culture of innovation and creativity.<br>
+<b>Global Reach: </b> Prepares students for global job opportunities.<br>
+<b>Flexible Learning:</b>  Offers online and on-campus learning options.<br>
+<b>Certifications:</b>  Prepares students for industry-recognized certifications.<br>
+<b>Networking:</b>  Builds a network of peers and professionals.<br>
+<b>Problem Solving:</b>  Enhances problem-solving and critical thinking abilities.<br>
+<b>Cutting-Edge Knowledge:</b>  Keeps students updated with the latest tech trends.<br>
+<b>Entrepreneurship:</b> Equips students with skills to start tech businesses.<br>
+<b>Internships: </b> Provides opportunities for real-world experience.<br>
+<b>Higher Earning Potential:</b>  Tech careers often come with competitive salaries.<br>
+<b>Self-Employment:</b>  Allows for freelancing and self-employment opportunities.<br>
+<b>Remote Work: </b> Enables work from anywhere with an internet connection.<br>
+<b>Adaptability: </b> Tech skills are transferable across industries.<br>
+<b>Access to Resources:</b>  Offers access to software, hardware, and research materials.<br>
+<b>Collaboration:</b>  Encourages teamwork and collaborative projects.<br>
+<b>Tech Literacy:</b>  Enhances digital literacy for everyday life.<br>
+<b>Personal Growth:</b>  Boosts confidence and personal development.<br></p>
 </div>
 <?php include "include/footer.php"; ?>
