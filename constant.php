@@ -14,6 +14,7 @@ $BASE_URL="index.php";
 // website file path on localhost
 $URL="http://localhost/sgcsmindia.com/api/src/"; 
 $ADMIN_IMG_PATH="http://localhost/sgcsmindia.com/user/img/";
+$STUDENT_IMG_PATH="http://localhost/sgcsmindia.com/admin/gallery/student/";
 $GALLERY_IMG_PATH="http://localhost/sgcsmindia.com/admin/gallery/image/";
 $GALLERY_VIDEO_PATH="http://localhost/sgcsmindia.com/admin/uploads/videos/";
 $GALLERY_NEWS_PATH="http://localhost/sgcsmindia.com/admin/uploads/news/";

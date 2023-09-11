@@ -43,6 +43,7 @@ $result = json_decode($response);
                 <thead class="bg-light">
                   <tr>
                     <th>Sr no.</th>
+                    <th>Image</th>
                     <th>Name</th>
                     <th>Email</th>
                     <th>Phone</th>
@@ -60,18 +61,20 @@ $result = json_decode($response);
                     foreach ($result as $key => $value) {
                       foreach ($value as $key1 => $value1) {
                         ++$counter;
+                        $student_profile_image = $STUDENT_IMG_PATH . $value1->id . "/" . $value1->id . ".png";
                         ?>
 
-                        <td><?php echo $counter; ?></td>
                         <td>
-                          <div class="d-flex align-items-center">
-                            <img src="assets/images/avatar/avatar-1.jpg" alt="" class="avatar avatar-xs rounded-circle">
-                            <div class="ms-2">
-                              <a class="text-inherit">
-                                <?php echo $value1->student_name; ?>
-                              </a>
-                            </div>
-                          </div>
+                          <?php echo $counter; ?>
+                        </td>
+                        <td>
+                          <a href="<?php echo $student_profile_image; ?>" data-toggle="lightbox"
+                            data-gallery="admin-image-gallery" data-caption="<?php echo $value1->student_name; ?>">
+                            <img src="<?php echo $student_profile_image; ?>" alt="" class="img-fluid">
+                          </a>
+                        </td>
+                        <td>
+                          <?php echo $value1->student_name; ?>
                         </td>
 
                         <td>

@@ -19,14 +19,14 @@ class Dashboard
     {
 
         if ($this->status == 0) {
-            $query = "SELECT COUNT(id) as reg_count FROM " . $this->franchise_registration . " where status=0";
+            $query = "SELECT COUNT(id) as franchise_count FROM " . $this->franchise_registration . " where status=0";
             $stmt = $this->conn->prepare($query);
             // $stmt->bindParam(":status", $this->status);
         } else if ($this->status == 1) {
-            $query = "SELECT COUNT(id) as reg_count FROM " . $this->franchise_registration . " where status=1";
+            $query = "SELECT COUNT(id) as franchise_count FROM " . $this->franchise_registration . " where status=1";
             $stmt = $this->conn->prepare($query);
         } else if ($this->status == 2) {
-            $query = "SELECT COUNT(id) as reg_count FROM " . $this->franchise_registration . " where status=2";
+            $query = "SELECT COUNT(id) as franchise_count FROM " . $this->franchise_registration . " where status=2";
             $stmt = $this->conn->prepare($query);
         }
         // execute query

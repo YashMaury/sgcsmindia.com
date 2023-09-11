@@ -13,6 +13,22 @@ class Student
         $this->conn = $db;
     }
 
+    function read_reg_maxId()
+    {
+        $query = "Select max(id) as id from " . $this->student_registration . "";
+        $stmt = $this->conn->prepare($query);
+        $stmt->execute();
+        return $stmt;
+    }
+    function read_reg_by_email()
+    {
+        $query = "Select student_email from " . $this->student_registration . "where student_email=:student_email";
+        $stmt = $this->conn->prepare($query);
+        $stmt->bindParam(":student_email", $this->student_email);
+        $stmt->execute();
+        return $stmt;
+    }
+
     function student_registration()
     {
 
@@ -208,9 +224,10 @@ class Student
     // }
 
     //read registerd farmers
-    function readStudent(){
-        $query="Select id, student_name, student_mobile , course, student_email, student_password, status, createdOn, createdBy  from " .$this->student_registration;
-        $stmt = $this->conn->prepare($query); 
+    function readStudent()
+    {
+        $query = "Select id, student_name, student_mobile , course, student_email, student_password, status, createdOn, createdBy  from " . $this->student_registration;
+        $stmt = $this->conn->prepare($query);
         // $stmt->bindParam(":email", $this->email);
         // $stmt->bindParam(":password", $this->password);
 
@@ -218,12 +235,7 @@ class Student
         return $stmt;
     }
 
-    // function read_reg_maxId(){
-    //     $query="Select max(id) as id from " . $this->table_name ."";
-    //     $stmt = $this->conn->prepare($query); 
-    //     $stmt->execute();
-    //     return $stmt;
-    // }
+
     // function read_profile_by_id(){
     //     $query="Select 
     //     id, full_name, father_name, mother_name, spouse_name,

@@ -13,7 +13,7 @@
 </div>
 
 
-<form action="admin/action/student_registration_post.php" method="post">
+<form action="admin/action/student_registration_post.php" method="post" enctype="multipart/form-data">
     <div class="container content">
         <div class="sec-title mb-3 text-center">
             <h2 class="mb-0">STUDENT REGISTRATION</h2>
@@ -26,16 +26,16 @@
             </p> -->
             <p>
                 <strong>Name :</strong> <br />
-                <input type="text" name="student_name" value="" class="form-control" />
+                <input type="text" name="student_name" value="" class="form-control" required />
             </p>
             <p>
                 <strong>Mobile :</strong> <br />
-                <input type="text" name="student_mobile" value="" class="form-control" />
+                <input type="number" maxlength="10" minlength="10" name="student_mobile" value="" class="form-control" required />
             </p>
 
             <p>
                 <strong>Course :</strong> <br />
-                <select name="course" class=form-control>
+                <select name="course" class=form-control required >
                     <option value="Basic &amp; Typing (6 Months)">Basic &amp; Typing (6 Months)</option>
                     <option value="Diploma In Basic Programming (DBP) (6 Months)">Diploma In Basic Programming (DBP) (6
                         Months)</option>
@@ -181,12 +181,15 @@
             </p>
             <p>
                 <strong>Email :</strong> <br />
-                <input type="email" name="student_email" value="" class="form-control" />
+                <input type="email" name="student_email" value="" class="form-control" required />
             </p>
             <p>
                 <strong>Password :</strong> <br />
-                <input type="password" name="student_password" value="" class="form-control" />
-
+                <input type="password" name="student_password" value="" class="form-control" required />
+            </p>
+            <p>
+                <strong>Image :</strong> <br />
+                <input type="file" name="student_image" value="" class="form-control" required />
             </p>
 
             <p>

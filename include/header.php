@@ -206,11 +206,11 @@
                             </a>
 
                             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <a class="dropdown-item" href="our-publication.php">Our Publication</a>
+                                <!-- <a class="dropdown-item" href="our-publication.php">Our Publication</a> -->
                                 <a class="dropdown-item" href="our-gallery.php">Gallery</a>
                                 <a class="dropdown-item" href="placement-cell.php">Placement Cell</a>
                                 <a class="dropdown-item" href="news-events.php">News & Events</a>
-                                <a class="dropdown-item" href="media-coverage.php">Media Coverage</a>
+                                <!-- <a class="dropdown-item" href="media-coverage.php">Media Coverage</a> -->
                                 <a class="dropdown-item" href="study-material.php">Our Study Materials</a>
                             </div>
 

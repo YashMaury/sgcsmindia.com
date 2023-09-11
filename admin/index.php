@@ -94,6 +94,44 @@ $rejected_franchise = $result_rejected->records[0]->franchise_count;
                     <div class="card-body p-6">
                         <div class="d-flex justify-content-between align-items-center mb-6">
                             <div>
+                                <h4 class="mb-0 fs-5">Registered Franchise</h4>
+                            </div>
+                            <div class="icon-shape icon-md bg-light-primary text-dark-primary rounded-circle">
+                                <!-- <i class="bi bi-currency-dollar fs-5"></i> -->
+                                <i class="bi bi-people fs-5"></i>
+                            </div>
+                        </div>
+                        <div class="lh-1">
+                            <h1 class=" mb-2 fw-bold fs-2"><?php echo $approved_franchise; ?></h1>
+                            <span><b>Status:</b> Approved</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-12 mb-6">
+                <div class="card h-100 card-lg">
+                    <div class="card-body p-6">
+                        <div class="d-flex justify-content-between align-items-center mb-6">
+                            <div>
+                                <h4 class="mb-0 fs-5">Registered Franchise</h4>
+                            </div>
+                            <div class="icon-shape icon-md bg-light-primary text-dark-primary rounded-circle">
+                                <!-- <i class="bi bi-currency-dollar fs-5"></i> -->
+                                <i class="bi bi-people fs-5"></i>
+                            </div>
+                        </div>
+                        <div class="lh-1">
+                            <h1 class=" mb-2 fw-bold fs-2"><?php echo $rejected_franchise; ?></h1>
+                            <span><b>Status:</b> Rejected</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-12 mb-6">
+                <div class="card h-100 card-lg">
+                    <div class="card-body p-6">
+                        <div class="d-flex justify-content-between align-items-center mb-6">
+                            <div>
                                 <h4 class="mb-0 fs-5">Orders</h4>
                             </div>
                             <div class="icon-shape icon-md bg-light-warning text-dark-warning rounded-circle">
