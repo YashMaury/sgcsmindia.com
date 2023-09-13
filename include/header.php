@@ -39,7 +39,7 @@
             <div class="col-sm-">
                 <ul>
                     <li><a href="#"><i class="bi bi-telephone-fill"></i> 8433377466</a></li>
-                    <li><a href="#"><i class="bi bi-envelope-fill"></i> info@gictindia.org</a></li>
+                    <li><a href="#"><i class="bi bi-envelope-fill"></i> gictcomputer.edu@gmail.com</a></li>
                 </ul>
             </div>
 

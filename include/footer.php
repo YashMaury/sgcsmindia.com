@@ -64,12 +64,12 @@
                     <hr style="border-bottom: #fff solid 1px;">
 
                     <p>
-                        E-199 A, Street No.-70, Mahavir Enclave Part-III Main Beer Bazar Road, New Delhi - 110059
+                        Madardeeh Mungra Badshahpur Jaunpur Uttar Pradesh -222202.
                     </p>
                     <p>
                         <i class="bi bi-phone-fill"></i> +91-8433377466
-                        <i class="bi bi-envelope-fill"></i> info@gictindia.org |
-                        <i class="bi bi-envelope-fill"></i> gicteducomputer@gmail.com |
+                        <i class="bi bi-envelope-fill"></i> gictcomputer.edu@gmail.com |
+                        <i class="bi bi-envelope-fill"></i> #gictcomputer |
                         <i class="bi bi-globe"></i> www.gictcomputer.org |
                         <i class="bi bi-phone-fill"></i> +91-8433377466
                     </p>

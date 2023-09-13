@@ -11,17 +11,17 @@ if (isset($_GET["type"])) {
   }
 
   .course li {
-    padding: 3px;
+    padding:10px;
     width: 100%;
     list-style-type: none;
   }
 
   .course li:nth-child(even) {
-    background-color: #f39c12;
+    background-color: #c5c0db;
   }
 
   .course li:nth-child(odd) {
-    background-color: #e74c3c;
+    background-color: #837aab;
   }
 </style>
 
