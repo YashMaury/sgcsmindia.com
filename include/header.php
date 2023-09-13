@@ -66,21 +66,7 @@
     <header class="navbar navbar-dark px-5" id="header">
         <div class="container-fluid">
 
-            <div class="col-sm-9">
-                <div class="logo d-flex">
-                    <a href="index.php">
-                        <img class="img-fluid" src="web image/logo 1.png">
-                    </a>
-                    <div>
-                        <h1 style="color: red; letter-spacing:20px;"><b>GICT COMPUTER</b></h1>
-                        <p style="color:blue;text-align:center; letter-spacing:14px;">College of IT & Management</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-sm-3 d-flex justify-content-end">
-                <div id="google_translate_element"></div>
-            </div>
+            
 
         </div>
     </header>
@@ -141,21 +127,7 @@
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
                                 data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                GET IN TOUCH
-                            </a>
-
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <a class="dropdown-item" href="download.php">Downloads</a>
-                                <a class="dropdown-item" href="appriciation-letter.php">Appreciation Letters</a>
-                                <a class="dropdown-item" href="linkage-affiliation.php">Linkage & Affiliation</a>
-                                <a class="dropdown-item" href="how-to-get-affiliaction.php">How to Get Affiliation</a>
-                                <a class="dropdown-item" href="authorized-studycenter.php">Authorized Study Center</a>
-                            </div>
-                        </li>
-
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
-                                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                               
                                 STUDENT
                             </a>
 

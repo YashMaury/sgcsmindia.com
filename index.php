@@ -97,8 +97,8 @@
   <div class="d-flex gap-2 mt-4">
     <img class="w-25" src="assets/images/b1.png" alt="">
     <img class="w-25" src="assets/images/b2.png" alt="">
-    <img class="w-25" src="assets/images/b1.png" alt="">
-    <img class="w-25" src="assets/images/b2.png" alt="">
+    <img class="w-25" src="assets/images/b3.png" alt="">
+    <img class="w-25" src="assets/images/b4.png" alt="">
   </div>
 </section>
 
