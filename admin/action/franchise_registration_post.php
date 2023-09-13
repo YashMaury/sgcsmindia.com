@@ -5,6 +5,12 @@ if (isset($_POST["submit"])) {
 
     $center_name = ucwords($_POST["center_name"]);
     $center_director = $_POST["center_director"];
+    $login_email = $_POST["center_email"];
+
+    $smallcase_centerdeirector = strtolower($_POST["center_director"]);
+    $exploded_password = explode(" ",$smallcase_centerdeirector);
+    $login_password = $exploded_password[0].rand(100000,1000000);
+
     $center_state = $_POST["center_state"];
     $center_district = $_POST["center_district"];
     $center_block = $_POST["center_block"];
@@ -23,6 +29,8 @@ if (isset($_POST["submit"])) {
     $data = array(
         "center_name" => $center_name,
         "center_director" => $center_director,
+        "login_email" => $login_email,
+        "login_password" => $login_password,
         "center_state" => $center_state,
         "center_district" => $center_district,
         "center_block" => $center_block,

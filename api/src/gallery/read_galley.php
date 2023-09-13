@@ -21,6 +21,8 @@ $read_gallery = new Galley($db);
   
 $data = json_decode(file_get_contents("php://input"));
 
+$read_gallery->franchise_id = $data->franchise_id;
+
 $stmt = $read_gallery->read_gallery();
 $num = $stmt->rowCount();
   
@@ -39,6 +41,7 @@ if($num>0){
         $read_gallery_item=array(
             "id" => $id,
             "image_title" => $imageTitle,
+            "franchise_id" => $franchise_id,
             "image_description" => $imageDescription,
             "created_by"=>$createdBy,
             "created_on"=>$createdOn

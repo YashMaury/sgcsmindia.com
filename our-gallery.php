@@ -1,7 +1,8 @@
 <?php include "include/header.php"; ?>
 <?php
 $url = $URL."gallery/read_galley.php";
-$data = array();
+$franchise_id = 0;
+$data = array("franchise_id" => $franchise_id);
 //print_r($data);
 $postdata = json_encode($data);
 $client = curl_init($url);

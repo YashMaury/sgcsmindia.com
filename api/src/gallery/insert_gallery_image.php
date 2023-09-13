@@ -28,10 +28,11 @@ if(
 
 {
     
-    $insert_gallery->image_title = $data->image_title;
-    $insert_gallery->image_description = $data->image_description;
-    $insert_gallery->created_by = $data->created_by;
-    $insert_gallery->created_on = $data->created_on;
+    $insert_gallery->imageTitle = $data->image_title;
+    $insert_gallery->franchise_id = $data->franchise_id;
+    $insert_gallery->imageDescription = $data->image_description;
+    $insert_gallery->createdBy = $data->created_by;
+    $insert_gallery->createdOn = $data->created_on;
 
     
     //var_dump($reg);

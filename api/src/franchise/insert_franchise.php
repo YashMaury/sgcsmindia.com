@@ -19,17 +19,21 @@ $franchise = new Franchise($db);
   
 // get posted data
 $data = json_decode(file_get_contents("php://input"));
-//print_r($data);  
+// print_r($data);  
 // make sure data is not empty
 if(
     
     !empty($data->center_name) &&
-    !empty($data->center_director)
+    !empty($data->center_director) &&
+    !empty($data->login_email) &&
+    !empty($data->login_password) 
 )
 
 {
     $franchise->center_name = $data->center_name;
     $franchise->center_director = $data->center_director;
+    $franchise->login_email = $data->login_email;
+    $franchise->login_password = $data->login_password;
     $franchise->center_state = $data->center_state;
     $franchise->center_district = $data->center_district;
     $franchise->center_block = $data->center_block;

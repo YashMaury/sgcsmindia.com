@@ -44,6 +44,8 @@ if ($num > 0) {
             "id" => $id,
             "center_name" => $center_name,
             "center_director" => $center_director,
+            "login_email" => $login_email,
+            "login_password" => $login_password,
             "center_state" => $center_state,
             "center_district" => $center_district,
             "center_block" => $center_block,

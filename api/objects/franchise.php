@@ -11,7 +11,7 @@ class Franchise
         $this->conn = $db;
     }
 
-    public $id, $center_name, $center_director, $center_state, $center_district, $center_block, $center_city, $center_pincode, $center_email, $center_mobile, $center_message, $status, $createdOn, $createdBy, $updatedOn, $updatedBy;
+    public $id, $center_name, $center_director, $login_email, $login_password, $center_state, $center_district, $center_block, $center_city, $center_pincode, $center_email, $center_mobile, $center_message, $status, $createdOn, $createdBy, $updatedOn, $updatedBy;
 
     // public function read_only_examname(){
     //     $query="Select exam_name from " .$this->table_name .  " where exam_name=:exam_name";
@@ -23,7 +23,7 @@ class Franchise
 
     public function readFranchiseDetails()
     {
-        $query = "Select id, center_name, center_director, center_state, center_district, center_block, center_city, center_pincode, center_email, center_mobile, center_message, status, createdOn, createdBy from " . $this->table_name;
+        $query = "Select id, center_name, center_director, login_email, login_password, center_state, center_district, center_block, center_city, center_pincode, center_email, center_mobile, center_message, status, createdOn, createdBy from " . $this->table_name;
         $stmt = $this->conn->prepare($query);
         $stmt->execute();
         return $stmt;
@@ -36,6 +36,8 @@ class Franchise
         SET
              center_name=:center_name,
              center_director=:center_director,
+             login_email=:login_email,
+             login_password=:login_password,
              center_state=:center_state,
              center_district=:center_district,
              center_block=:center_block,
@@ -52,6 +54,8 @@ class Franchise
         $stmt = $this->conn->prepare($query);
         $this->center_name = htmlspecialchars(strip_tags($this->center_name));
         $this->center_director = htmlspecialchars(strip_tags($this->center_director));
+        $this->login_email = htmlspecialchars(strip_tags($this->login_email));
+        $this->login_password = htmlspecialchars(strip_tags($this->login_password));
         $this->center_state = htmlspecialchars(strip_tags($this->center_state));
         $this->center_district = htmlspecialchars(strip_tags($this->center_district));
         $this->center_block = htmlspecialchars(strip_tags($this->center_block));
@@ -67,6 +71,8 @@ class Franchise
 
         $stmt->bindParam(":center_name", $this->center_name);
         $stmt->bindParam(":center_director", $this->center_director);
+        $stmt->bindParam(":login_email", $this->login_email);
+        $stmt->bindParam(":login_password", $this->login_password);
         $stmt->bindParam(":center_state", $this->center_state);
         $stmt->bindParam(":center_district", $this->center_district);
         $stmt->bindParam(":center_block", $this->center_block);
@@ -155,7 +161,7 @@ class Franchise
 
     public function readFranchiseByStatus()
     {
-        $query = "Select id, center_name, center_director, center_state, center_district, center_block, center_city, center_pincode, center_email, center_mobile, center_message, status, createdOn, createdBy, updatedOn, updatedBy from " . $this->table_name . " where status=:status";
+        $query = "Select id, center_name, center_director, login_email, login_password, center_state, center_district, center_block, center_city, center_pincode, center_email, center_mobile, center_message, status, createdOn, createdBy, updatedOn, updatedBy from " . $this->table_name . " where status=:status";
         $stmt = $this->conn->prepare($query);
         $stmt->bindParam(":status", $this->status);
         $stmt->execute();
@@ -282,28 +288,39 @@ class Franchise
     //     }
 
 
-    //    function delete_exam(){
+    function franchiseLogin()
+    {
+        $query = "Select id, center_name, center_director, login_email, login_password, center_state, center_district, center_block, center_city, center_pincode, center_email, center_mobile, center_message, status, createdOn, createdBy, updatedOn, updatedBy from " . $this->table_name . " where login_email=:login_email and login_password=:login_password";
+        $stmt = $this->conn->prepare($query);
+        $stmt->bindParam(":login_email", $this->login_email);
+        $stmt->bindParam(":login_password", $this->login_password);
 
-    //     // delete query
-//     $query = " DELETE FROM " . $this->table_name . " 
-//     WHERE id= ? ";
+        $stmt->execute();
+        return $stmt;
+    }
 
-    //     // prepare query
-//     $stmt = $this->conn->prepare($query);
+    function deleteFranchise()
+    {
 
-    //     // sanitize
-//     $this->id=htmlspecialchars(strip_tags($this->id));
+        // delete query
+        $query = " DELETE FROM " . $this->table_name . " WHERE id= ? ";
 
-    //     // bind id of record to delete
-//     $stmt->bindParam(1, $this->id);
+        // prepare query
+        $stmt = $this->conn->prepare($query);
 
-    //     // execute query
-//     if($stmt->execute()){
-//         return true;
-//     }
+        // sanitize
+        $this->id = htmlspecialchars(strip_tags($this->id));
 
-    //     return false;
-// }
+        // bind id of record to delete
+        $stmt->bindParam(1, $this->id);
+
+        // execute query
+        if ($stmt->execute()) {
+            return true;
+        }
+
+        return false;
+    }
 
 
 }

@@ -302,7 +302,7 @@ if (isset($_SESSION["ADMIN_ID"])) {
                                 </ul>
                             </div>
                         </li>
-                        <li class="nav-item">
+                        <!-- <li class="nav-item">
                             <a class="nav-link collapsed " href="#" data-bs-toggle="collapse"
                                 data-bs-target="#navStudentSection" aria-expanded="false" aria-controls="navStudentSection">
                                 <div class="d-flex align-items-center">
@@ -317,11 +317,6 @@ if (isset($_SESSION["ADMIN_ID"])) {
                                             Registered Students List
                                         </a>
                                     </li>
-                                    <!-- <li class="nav-item ">
-                                        <a class="nav-link " href="view_uploaded_image.php">
-                                            View Uploaded Image
-                                        </a>
-                                    </li> -->
                                 </ul>
                             </div>
                         </li>
@@ -340,7 +335,6 @@ if (isset($_SESSION["ADMIN_ID"])) {
                                             Upload Image
                                         </a>
                                     </li>
-                                    <!-- Nav item -->
                                     <li class="nav-item ">
                                         <a class="nav-link " href="view_uploaded_image.php">
                                             View Uploaded Image
@@ -365,7 +359,6 @@ if (isset($_SESSION["ADMIN_ID"])) {
                                             Upload Study Material
                                         </a>
                                     </li>
-                                    <!-- Nav item -->
                                     <li class="nav-item ">
                                         <a class="nav-link " href="view_study_material.php">
                                             View Uploaded Study Material
@@ -373,7 +366,7 @@ if (isset($_SESSION["ADMIN_ID"])) {
                                     </li>
                                 </ul>
                             </div>
-                        </li>
+                        </li> -->
 
                     </ul>
                 </div>
@@ -430,7 +423,7 @@ if (isset($_SESSION["ADMIN_ID"])) {
                                 </ul>
                             </div>
                         </li>
-                        <li class="nav-item">
+                        <!-- <li class="nav-item">
                             <a class="nav-link collapsed " href="#" data-bs-toggle="collapse"
                                 data-bs-target="#navStudentSection" aria-expanded="false" aria-controls="navStudentSection">
                                 <div class="d-flex align-items-center">
@@ -445,11 +438,6 @@ if (isset($_SESSION["ADMIN_ID"])) {
                                             Registered Students List
                                         </a>
                                     </li>
-                                    <!-- <li class="nav-item ">
-                                        <a class="nav-link " href="view_uploaded_image.php">
-                                            View Uploaded Image
-                                        </a>
-                                    </li> -->
                                 </ul>
                             </div>
                         </li>
@@ -468,7 +456,6 @@ if (isset($_SESSION["ADMIN_ID"])) {
                                             Upload Image
                                         </a>
                                     </li>
-                                    <!-- Nav item -->
                                     <li class="nav-item ">
                                         <a class="nav-link " href="view_uploaded_image.php">
                                             View Uploaded Image
@@ -493,7 +480,6 @@ if (isset($_SESSION["ADMIN_ID"])) {
                                             Upload Study Material
                                         </a>
                                     </li>
-                                    <!-- Nav item -->
                                     <li class="nav-item ">
                                         <a class="nav-link " href="view_study_material.php">
                                             View Uploaded Study Material
@@ -501,7 +487,7 @@ if (isset($_SESSION["ADMIN_ID"])) {
                                     </li>
                                 </ul>
                             </div>
-                        </li>
+                        </li> -->
 
 
                     </ul>

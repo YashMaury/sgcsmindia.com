@@ -45,7 +45,7 @@
 
             <div class="col-sm-">
                 <ul>
-                    <li><a href="center-login.php" target="_blank">Center Login</a></li>
+                    <li><a href="centerpanel/login.php" target="_blank">Center Login</a></li>
                     <li><a target="_blank" href=""><i class="bi bi-facebook"></i></a></li>
                     <li><a target="_blank" href=""><i class="bi bi-twitter"></i></a></li>
                     <li><a target="_blank" href=""><i class="bi bi-instagram"></i></a></li>
@@ -133,7 +133,6 @@
 
                             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                                 <a class="dropdown-item" href="studentlogin.php">Student Login</a>
-                                <a class="dropdown-item" href="student_registration.php">Student Registration</a>
                                 <a class="dropdown-item" href="exam-login.php">Exam Registration</a>
                                 <a class="dropdown-item" href="student-details.php">Student Information</a>
                                 <a class="dropdown-item" href="online-result.php">Online Result</a>
@@ -148,11 +147,11 @@
 
                             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                                 <!---<a class="dropdown-item" href="">Registration Process</a>--->
-                                <a class="dropdown-item" href="centerpanel/center-login.php" target="_blank">ASC
+                                <a class="dropdown-item" href="centerpanel/login.php" target="_blank">ASC
                                     Login</a>
                                 <a class="dropdown-item" href="bank-details.php">Our Account (Bank Details)</a>
                                 <a class="dropdown-item" href="business-support-system.php">Business Support System</a>
-                                <a class="dropdown-item" href="rules-regulation.php">SGCSM Rules & regulation</a>
+                                <a class="dropdown-item" href="rules-regulation.php">GICT Rules & regulation</a>
                             </div>
                         </li>
 

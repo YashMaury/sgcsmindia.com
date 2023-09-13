@@ -8,7 +8,7 @@ class Dashboard
 
     public $id, $center_name, $center_director, $center_state, $center_district, $center_block, $center_city, $center_pincode, $center_email, $center_mobile, $center_message, $status, $createdOn, $createdBy, $updatedOn, $updatedBy;
 
-    public $student_name, $student_mobile, $course, $student_email, $student_password;
+    public $franchise_id, $student_name, $student_mobile, $course, $student_email, $student_password;
 
     public function __construct($db)
     {
@@ -34,17 +34,16 @@ class Dashboard
         return $stmt;
     }
 
-    //Total vacancy count
 
-    // function total_vacancy_count()
-    // {
+    function studentCounter()
+    {
 
-    //     $query = "SELECT COUNT(exam_name) as exam_count FROM " . $this->table_exam . " where status=1";
-    //     $stmt = $this->conn->prepare($query);
-    //     // $stmt->bindParam(":status", $this->status);
+        $query = "SELECT COUNT(id) as student_count FROM " . $this->student_registration . " where franchise_id=:franchise_id";
+        $stmt = $this->conn->prepare($query);
+        $stmt->bindParam(":franchise_id", $this->franchise_id);
 
-    //     // execute query
-    //     $stmt->execute();
-    //     return $stmt;
-    // }
+        // execute query
+        $stmt->execute();
+        return $stmt;
+    }
 }
