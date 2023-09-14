@@ -1,7 +1,8 @@
 <?php
 include "include/header.php";
 $url = $URL . "student/read_students_detail.php";
-$data = array();
+$franchise_id = $_SESSION['FRANCHISE_ID'];
+$data = array("franchise_id" => $franchise_id);
 //print_r($data);
 $postdata = json_encode($data);
 $client = curl_init($url);

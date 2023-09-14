@@ -33,6 +33,7 @@ if(
 )
 
 {
+    $student_reg->franchise_id = $data->franchise_id;
     $student_reg->student_name = $data->student_name;
     $student_reg->student_mobile = $data->student_mobile;
     $student_reg->course = $data->course;

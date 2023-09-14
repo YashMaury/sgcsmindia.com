@@ -5,7 +5,7 @@ class Student
     private $conn;
     private $student_registration = "student_registration";
     // private $table_name = "registration";
-    public $id, $student_name, $student_mobile, $course, $student_email, $student_password, $status, $createdOn, $createdBy;
+    public $id, $franchise_id, $student_name, $student_mobile, $course, $student_email, $student_password, $status, $createdOn, $createdBy;
 
 
     public function __construct($db)
@@ -15,7 +15,7 @@ class Student
 
     function read_reg_maxId()
     {
-        $query = "Select max(id) as id from " . $this->student_registration . "";
+        $query = "Select max(id) as id from " . $this->student_registration;
         $stmt = $this->conn->prepare($query);
         $stmt->execute();
         return $stmt;
@@ -35,6 +35,7 @@ class Student
         // query to insert record
         $query = "INSERT INTO " . $this->student_registration . "
                 SET
+                    franchise_id=:franchise_id,
                     student_name=:student_name,
                     student_mobile=:student_mobile,
                     course=:course,
@@ -47,6 +48,7 @@ class Student
 
         // prepare query
         $stmt = $this->conn->prepare($query);
+        $this->franchise_id = htmlspecialchars(strip_tags($this->franchise_id));
         $this->student_name = htmlspecialchars(strip_tags($this->student_name));
         $this->student_mobile = htmlspecialchars(strip_tags($this->student_mobile));
         $this->course = htmlspecialchars(strip_tags($this->course));
@@ -57,6 +59,7 @@ class Student
         $this->createdBy = htmlspecialchars(strip_tags($this->createdBy));
 
         //bind values
+        $stmt->bindParam(":franchise_id", $this->franchise_id);
         $stmt->bindParam(":student_name", $this->student_name);
         $stmt->bindParam(":student_mobile", $this->student_mobile);
         $stmt->bindParam(":course", $this->course);
@@ -226,10 +229,10 @@ class Student
     //read registerd farmers
     function readStudent()
     {
-        $query = "Select id, student_name, student_mobile , course, student_email, student_password, status, createdOn, createdBy  from " . $this->student_registration;
+        $query = "Select id, franchise_id, student_name, student_mobile , course, student_email, student_password, status, createdOn, createdBy  from " . $this->student_registration .
+            " where franchise_id=:franchise_id";
         $stmt = $this->conn->prepare($query);
-        // $stmt->bindParam(":email", $this->email);
-        // $stmt->bindParam(":password", $this->password);
+        $stmt->bindParam(":franchise_id", $this->franchise_id);
 
         $stmt->execute();
         return $stmt;

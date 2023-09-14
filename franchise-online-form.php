@@ -21,10 +21,10 @@
             <div class="row">
                 <div class="col-sm-6">
                     <p>NAME OF THE STUDY CENTER :<br />
-                        <input type="text" name="center_name" value="" class="form-control" />
+                        <input type="text" name="center_name" value="" class="form-control" required />
                     </p>
                     <p>STATE :<br />
-                        <select name="center_state" class=form-control>
+                        <select name="center_state" class=form-control required>
                             <optgroup label="">
                                 <option value="">Select state</option>
                                 <option value="Andhra Pradesh">Andhra Pradesh</option>
@@ -67,27 +67,27 @@
                         </select>
                     </p>
                     <p>BLOCK :<br />
-                        <input type="text" name="center_block" value="" class="form-control" />
+                        <input type="text" name="center_block" value="" class="form-control" required />
                     </p>
                     <p>PIN CODE :<br />
-                        <input type="text" name="center_pincode" value="" class="form-control" />
+                        <input type="text" name="center_pincode" value="" class="form-control" required />
                     </p>
                     <p>PH./ MOBILE (STD CODE) :<br />
-                        <input type="text" name="center_mobile" value="" class="form-control" />
+                        <input type="text" name="center_mobile" value="" class="form-control" required />
                     </p>
                 </div>
                 <div class="col-sm-6">
                     <p>CENTER HEAD / DIRECTOR'S NAME :<br />
-                        <input type="text" name="center_director" value="" class="form-control" />
+                        <input type="text" name="center_director" value="" class="form-control" required />
                     </p>
                     <p>DISTT :<br />
-                        <input type="text" name="center_district" value="" class="form-control" />
+                        <input type="text" name="center_district" value="" class="form-control" required />
                     </p>
                     <p>City :<br />
-                        <input type="text" name="center_city" value="" class="form-control" />
+                        <input type="text" name="center_city" value="" class="form-control" required />
                     </p>
                     <p>E-MAIL :<br />
-                        <input type="email" name="center_email" value="" class="form-control" />
+                        <input type="email" name="center_email" value="" class="form-control" required />
                     </p>
                 </div>
                 <div class="col-sm-12">

@@ -21,7 +21,7 @@ $read_students = new Student($db);
 
 $data = json_decode(file_get_contents("php://input"));
 // read products will be here
-// $read_students->status=$data->status;
+$read_students->franchise_id=$data->franchise_id;
 
 // query products
 $stmt = $read_students->readStudent();

@@ -3,6 +3,7 @@ include '../../constant.php';
 
 if (isset($_POST["submit"])) {
 
+    $franchise_id = $_SESSION['FRANCHISE_ID'];
     $student_name = ucwords($_POST["student_name"]);
     $student_mobile = $_POST["student_mobile"];
     $course = $_POST["course"];
@@ -18,7 +19,7 @@ if (isset($_POST["submit"])) {
     $data_maxId = array();
     $maxId_postdata = json_encode($data_maxId);
     $result_max_notification = url_encode_Decode($url_read_maxId, $maxId_postdata);
-    $id = $result_max_notification->records[0]->id+1;
+    $id = $result_max_notification->records[0]->id + 1;
 
     /*--- update the images in img folder inside user folder ---*/
 
@@ -93,6 +94,7 @@ if (isset($_POST["submit"])) {
 
     // echo "Not Matched";
     $data = array(
+        "franchise_id"=>$franchise_id,
         "student_name" => $student_name,
         "student_mobile" => $student_mobile,
         "course" => $course,
