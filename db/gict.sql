@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Sep 09, 2023 at 02:29 AM
+-- Generation Time: Sep 14, 2023 at 02:42 AM
 -- Server version: 5.7.11
 -- PHP Version: 5.6.18
 
@@ -23,24 +23,67 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Table structure for table `imagegallery`
+-- Table structure for table `admin`
 --
 
-CREATE TABLE `imagegallery` (
+CREATE TABLE `admin` (
   `id` int(11) NOT NULL,
-  `imageTitle` varchar(200) NOT NULL,
-  `imageDescription` varchar(1000) NOT NULL,
+  `admin_name` varchar(200) NOT NULL,
+  `admin_email` varchar(200) NOT NULL,
+  `admin_password` varchar(200) NOT NULL,
+  `status` tinyint(1) NOT NULL,
   `createdOn` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
   `createdBy` varchar(200) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `imagegallery`
+-- Dumping data for table `admin`
 --
 
-INSERT INTO `imagegallery` (`id`, `imageTitle`, `imageDescription`, `createdOn`, `createdBy`) VALUES
-(11, 'Yash', 'Dwaadw', '2023-09-08 14:23:37', 'Admin'),
-(12, 'Yash', 'YAshashas', '2023-09-08 14:24:24', 'Admin');
+INSERT INTO `admin` (`id`, `admin_name`, `admin_email`, `admin_password`, `status`, `createdOn`, `createdBy`) VALUES
+(1, 'Yash', 'yash@gmail.com', '12345', 0, '2023-09-09 02:51:09', 'Yash');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `franchise_registration`
+--
+
+CREATE TABLE `franchise_registration` (
+  `id` int(11) NOT NULL,
+  `center_name` varchar(300) NOT NULL,
+  `center_director` varchar(255) NOT NULL,
+  `login_email` varchar(200) NOT NULL,
+  `login_password` varchar(200) NOT NULL,
+  `center_state` varchar(255) NOT NULL,
+  `center_district` varchar(255) NOT NULL,
+  `center_block` varchar(255) NOT NULL,
+  `center_city` varchar(255) NOT NULL,
+  `center_pincode` varchar(100) NOT NULL,
+  `center_email` varchar(200) NOT NULL,
+  `center_mobile` varchar(30) NOT NULL,
+  `center_message` varchar(1000) NOT NULL,
+  `status` tinyint(1) NOT NULL,
+  `createdOn` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  `createdBy` varchar(300) NOT NULL,
+  `updatedOn` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00',
+  `updatedBy` varchar(200) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `imagegallery`
+--
+
+CREATE TABLE `imagegallery` (
+  `id` int(11) NOT NULL,
+  `franchise_id` varchar(200) NOT NULL,
+  `imageTitle` varchar(200) NOT NULL,
+  `imageDescription` varchar(1000) NOT NULL,
+  `createdOn` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  `createdBy` varchar(200) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
 
@@ -50,6 +93,7 @@ INSERT INTO `imagegallery` (`id`, `imageTitle`, `imageDescription`, `createdOn`,
 
 CREATE TABLE `student_registration` (
   `id` int(11) NOT NULL,
+  `franchise_id` varchar(100) NOT NULL,
   `student_name` varchar(200) NOT NULL,
   `student_mobile` varchar(200) NOT NULL,
   `course` varchar(1000) NOT NULL,
@@ -59,16 +103,6 @@ CREATE TABLE `student_registration` (
   `createdOn` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
   `createdBy` varchar(200) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
--- Dumping data for table `student_registration`
---
-
-INSERT INTO `student_registration` (`id`, `student_name`, `student_mobile`, `course`, `student_email`, `student_password`, `status`, `createdOn`, `createdBy`) VALUES
-(1, 'Yash', '978456123', 'Basic &amp; Typing (6 Months)', 'yash@gmail.com', '12345', 0, '2023-09-08 03:43:45', 'Yash'),
-(2, 'Yash', '978456123', 'Basic &amp; Typing (6 Months)', 'yash@gmail.com', '12345', 0, '2023-09-08 03:44:35', 'Yash'),
-(3, 'Anshu', '987\\42852', 'Advance Diploma In Computer Application(ADCA) (1 Year)', 'anshu@gmail.com', '1234567898520', 0, '2023-09-08 03:45:12', 'Anshu'),
-(4, 'No', '978456132', 'Basic &amp; Typing (6 Months)', 'anshu@gmail.com', '123', 0, '2023-09-08 04:58:00', 'No');
 
 -- --------------------------------------------------------
 
@@ -85,15 +119,20 @@ CREATE TABLE `studymaterial` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Dumping data for table `studymaterial`
---
-
-INSERT INTO `studymaterial` (`id`, `materialTitle`, `materialDescription`, `createdOn`, `createdBy`) VALUES
-(3, 'Bio Notes', 'Bio Notes By Yash', '2023-09-08 14:11:00', 'Admin');
-
---
 -- Indexes for dumped tables
 --
+
+--
+-- Indexes for table `admin`
+--
+ALTER TABLE `admin`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `franchise_registration`
+--
+ALTER TABLE `franchise_registration`
+  ADD PRIMARY KEY (`id`);
 
 --
 -- Indexes for table `imagegallery`
@@ -118,20 +157,30 @@ ALTER TABLE `studymaterial`
 --
 
 --
+-- AUTO_INCREMENT for table `admin`
+--
+ALTER TABLE `admin`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+--
+-- AUTO_INCREMENT for table `franchise_registration`
+--
+ALTER TABLE `franchise_registration`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+--
 -- AUTO_INCREMENT for table `imagegallery`
 --
 ALTER TABLE `imagegallery`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 --
 -- AUTO_INCREMENT for table `student_registration`
 --
 ALTER TABLE `student_registration`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 --
 -- AUTO_INCREMENT for table `studymaterial`
 --
 ALTER TABLE `studymaterial`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
