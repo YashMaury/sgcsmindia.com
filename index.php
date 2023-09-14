@@ -52,12 +52,14 @@
   <br />
   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae necessitatibus, porro earum obcaecati sed dolor
     eligendi libero placeat amet deleniti, et in quas nam, error consequatur modi odit ea at?</p>
-
+    <center>
+    <button class="btn btn-primary">read more</button>
+    </center>
   <div class="d-flex">
-    <img class="w-25" src="assets/images/btn/center-login.jpg" alt="">
-    <img class="w-25" src="assets/images/btn/exam-login.jpg" alt="">
-    <img class="w-25" src="assets/images/btn/student-login.jpg" alt="">
-    <img class="w-25" src="assets/images/btn/form.jpg" alt="">
+    <img class="w-25" src="web image/centerlogin.png" alt="">
+    <img class="w-25" src="web image/examlogin.png" alt="">
+    <img class="w-25" src="web image/studentlogin.png" alt="">
+    <img class="w-25" src="web image/franchiesform.png" alt="">
   </div>
 
 </section>
