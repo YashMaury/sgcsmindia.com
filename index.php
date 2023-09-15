@@ -83,10 +83,10 @@
   </center>
 
   <div class="d-flex gap-2 mt-4">
-    <img class="w-25" src="assets/images/b1.png" alt="">
-    <img class="w-25" src="assets/images/b2.png" alt="">
-    <img class="w-25" src="assets/images/b1.png" alt="">
-    <img class="w-25" src="assets/images/b2.png" alt="">
+    <img class="w-25" src="web image/STUDY CENTER (1).png" alt="">
+    <img class="w-25" src="web image/STUDY CENTER.png"alt="">
+    <img class="w-25" src="web image/STUDY CENTER (1).png" alt="">
+    <img class="w-25" src="web image/STUDY CENTER.png" alt="">
   </div>
 </section>
 
