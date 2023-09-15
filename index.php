@@ -122,4 +122,117 @@
 </section>
 
 
+<section class="mt-4">
+  
+<div class="container" style="margin-top:10px;">
+        <div class="row">
+
+            <ul class="ch-grid">
+
+                <li>
+                    <div class="ch-item">
+                        <div class="ch-info">
+                            <h3>COMPUTER COURSES</h3>
+                            <p><a href="course.php?type=COMPUTER_COURSES">Click Here</a></p>
+                        </div>
+                        <div class="ch-thumb ch-img-1" style="background: url(images/1.jpg);background-repeat: no-repeat;background-size: cover;"></div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="ch-item">
+                        <div class="ch-info">
+                            <h3>TEACHER TRAINING COURSE</h3>
+                            <p><a href="course.php?type=TEACHER_TRAINING_COURSE">Click Here</a></p>
+                        </div>
+                        <div class="ch-thumb ch-img-2" style="background: url(images/3.jpg);background-repeat: no-repeat;background-size: cover;"></div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="ch-item">
+                        <div class="ch-info">
+                            <h3>NIELIT COURSES</h3>
+                            <p><a href="course.php?type=NIELIT_COURSES">Click Here</a></p>
+                        </div>
+                        <div class="ch-thumb ch-img-3" style="background: url(images/2.jpg);background-repeat: no-repeat;background-size: cover;"></div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="ch-item">
+                        <div class="ch-info">
+                            <h3>BOUTIQUE COURSES</h3>
+                            <p><a href="course.php?type=BOUTIQUE_COURSES">Click Here</a></p>
+                        </div>
+                        <div class="ch-thumb ch-img-4" style="background: url(images/4.jpg);background-repeat: no-repeat;background-size: cover;"></div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="ch-item">
+                        <div class="ch-info">
+                            <h3>BEAUTICIAN COURSES </h3>
+                            <p><a href="course.php?type=BEAUTICIAN_COURSES">Click Here</a></p>
+                        </div>
+                        <div class="ch-thumb ch-img-5" style="background: url(images/5.jpg);background-repeat: no-repeat;background-size: cover;"></div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="ch-item">
+                        <div class="ch-info">
+                            <h3>UG &amp; PG COURSE</h3>
+                            <p><a href="course.php?type=UG_PG_COURSE">Click Here</a></p>
+                        </div>
+                        <div class="ch-thumb ch-img-6" style="background: url(images/6.jpg);background-repeat: no-repeat;background-size: cover;"></div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="ch-item">
+                        <div class="ch-info">
+                            <h3>YOGA COURSES</h3>
+                            <p><a href="course.php?type=YOGA_COURSES">Click Here</a></p>
+                        </div>
+                        <div class="ch-thumb ch-img-7" style="background: url(images/7.jpg);background-repeat: no-repeat;background-size: cover;"></div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="ch-item">
+                        <div class="ch-info">
+                            <h3>NDLM COURSES</h3>
+                            <p><a href="course.php?type=NDLM_COURSES">Click Here</a></p>
+                        </div>
+                        <div class="ch-thumb ch-img-8" style="background: url(images/8.jpg);background-repeat: no-repeat;background-size: cover;"></div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="ch-item">
+                        <div class="ch-info">
+                            <h3>ADVANCE COURSES</h3>
+                            <p><a href="course.php?type=ADVANCE_COURSES">Click Here</a></p>
+                        </div>
+                        <div class="ch-thumb ch-img-9" style="background: url(images/9.jpg);background-repeat: no-repeat;background-size: cover;"></div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="ch-item">
+                        <div class="ch-info">
+                            <h3>bank details</h3>
+                            <p><a href="https://sgcsmindia.org/bank-details">Click Here</a></p>
+                        </div>
+                        <div class="ch-thumb ch-img-9" style="background: url(images/10.jpg);background-repeat: no-repeat;background-size: cover;"></div>
+                    </div>
+                </li>
+
+            </ul>
+
+        </div>
+    </div>
+</section>
+
 <?php include "include/footer.php"; ?>

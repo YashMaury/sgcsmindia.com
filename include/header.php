@@ -82,7 +82,9 @@
                 </button>
 
                 <div class="collapse navbar-collapse" id="navbarText">
-                    <ul class="navbar-nav mr-auto">
+                    <ul class="navbar-nav mr-auto d-flex align-items-center ">
+
+                    <li class="nav-item"><img src="web image/logo 1.png" alt=""></li>
 
                         <li class="nav-item"><a class="nav-link" href="index.php">HOME</a></li>
 
