@@ -20,10 +20,7 @@
         <div class="form-boxs">
             <div class="row">
                 <div class="col-sm-6">
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1797.8809799333487!2d82.21749166931154!3d25.679184438341206!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1694015614812!5m2!1sen!2sin"
-                        width="550" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d224.7184309867121!2d82.22503093852318!3d25.688033450519377!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3990092aa3322487%3A0xe761124c99a2973b!2sGICT%20COMPUTER!5e0!3m2!1sen!2sin!4v1694745120378!5m2!1sen!2sin" width="550" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
 
                 <div class="col-sm-6">

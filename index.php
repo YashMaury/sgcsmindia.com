@@ -135,7 +135,7 @@
                             <h3>COMPUTER COURSES</h3>
                             <p><a href="course.php?type=COMPUTER_COURSES">Click Here</a></p>
                         </div>
-                        <div class="ch-thumb ch-img-1" style="background: url(images/1.jpg);background-repeat: no-repeat;background-size: cover;"></div>
+                        <div class="ch-thumb ch-img-1" style="background: url(web image/9.png);background-repeat: no-repeat;background-size: cover;"></div>
                     </div>
                 </li>
 
@@ -205,7 +205,7 @@
                             <h3>NDLM COURSES</h3>
                             <p><a href="course.php?type=NDLM_COURSES">Click Here</a></p>
                         </div>
-                        <div class="ch-thumb ch-img-8" style="background: url(web image/13.png);background-repeat: no-repeat;background-size: cover;"></div>
+                        <div class="ch-thumb ch-img-8" style="background: url(web image/1.png);background-repeat: no-repeat;background-size: cover;"></div>
                     </div>
                 </li>
 
@@ -223,7 +223,7 @@
                     <div class="ch-item">
                         <div class="ch-info">
                             <h3>bank details</h3>
-                            <p><a href="https://sgcsmindia.org/bank-details">Click Here</a></p>
+                            <p><a href="bank-details.php">Click Here</a></p>
                         </div>
                         <div class="ch-thumb ch-img-9" style="background: url(images/10.jpg);background-repeat: no-repeat;background-size: cover;"></div>
                     </div>
