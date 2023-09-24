@@ -53,12 +53,12 @@ These institutes may offer both online and offline classes to accommodate differ
     <div class="row">
 
         <div class="col-sm-4">
-            <img class="img-fluid img-thumbnail" src="/dbda31b8-1d68-470f-b55d-b3729ab77b44.jfif" />
+            <img src="assets/images/mission.jpg" class="img-fluid img-thumbnail">
         </div>
         <div class="col-sm-8">
             <h3>Our Mission</h3>
             <div>
-                <img src="assets/images/mission.jpg" alt="">
+                
 >>GICT Computer empower individuals with the knowledge and skills necessary to excel in the field of computer science and information technology.<br>
 >>GICT Computer promote computer literacy and digital competency among students and the community at large.<br>
 >>GICT Computer foster a culture of innovation, creativity, and problem-solving in the realm of technology.<br>
@@ -88,7 +88,7 @@ These institutes may offer both online and offline classes to accommodate differ
         <div class="col-sm-8 pt-20">
             <h3>Our Vision</h3>
             <div>
-                <img src="assets/images/our vission.jpeg" alt="">
+                
 >>GICT Computer be a globally recognized center of excellence in computer education and technology innovation.<br>
 >>GICT Computer inspire and empower individuals to become leading contributors in the digital age.<br>
 >>GICT Computer foster a culture of lifelong learning, where graduates continually adapt to emerging technologies.<br>
@@ -113,7 +113,7 @@ These institutes may offer both online and offline classes to accommodate differ
         </div>
 
         <div class="col-sm-4">
-            <img class="img-fluid img-thumbnail" src="/e3da03f6-1664-4b5c-93af-d3b33f68e613.jfif" />
+            <img src="assets/images/our vission.jpeg" class="img-fluid img-thumbnail">
         </div>
     </div>
 
