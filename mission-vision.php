@@ -57,6 +57,7 @@
         <div class="col-sm-8">
             <h3>Our Mission</h3>
             <div>
+                <img src="assets/images/mission.jpg" alt="">
                 Today, the computer is indispensable, and its presence has become very important and necessary in our
                 daily life, and it has become easier for us to do many operations and activities.some big Institution
                 run their computer programme in higher charges. Due to which the middle class families of our societies
@@ -71,6 +72,7 @@
         <div class="col-sm-8 pt-20">
             <h3>Our Vision</h3>
             <div>
+                <img src="assets/images/our vission.jpeg" alt="">
                 Strengthen the development of associated learning centre as a proactive role model for high quality and
                 learner centric computer literacy programme & be the most admired institute among the nation's premier
                 institute for examination and certification in the field of Information Technology Education &

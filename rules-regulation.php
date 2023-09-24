@@ -21,38 +21,35 @@
     <div class="row">
         <div class="col-sm-9">
 
+
             <p>
                 <i class="bi bi-chevron-double-right"></i>
-                GICT is not responsible for any loss or damage of any sort that for a User may incur from dealing with
-                any third party.
+                GICT Computer empower individuals with the knowledge and skills necessary to excel in the field of computer science and information technology.
             </p>
 
             <p>
                 <i class="bi bi-chevron-double-right"></i>
-                The admission of the candidate may be cancelled who is found to be indulged Of the criminal activities.
+                GICT Computer promote computer literacy and digital competency among students and the community at large.
             </p>
 
             <p>
                 <i class="bi bi-chevron-double-right"></i>
-                All Institutes will work as an Authorized study centre of
-                S.G.C.S.M /S.G.W.T.I. /S.G.Y.S. /S.G.A.T.I, New Delhi.
+                GICT Computer prepare students for a dynamic and ever-changing technology landscape by offering up-to-date curriculum and training.
             </p>
 
             <p>
                 <i class="bi bi-chevron-double-right"></i>
-                All candidate of the centre will have to follow the rules laid down by the Center Head.
+                GICT Computer instill a strong sense of ethics and responsibility in students, emphasizing the ethical use of technology.
             </p>
 
             <p>
                 <i class="bi bi-chevron-double-right"></i>
-                Any information provided by the User will not be shared with any third party such as user id & password
-                and others GICT secret information’s.
+                GICT Computer facilitate research and development in cutting-edge technologies and contribute to technological advancements.
             </p>
 
             <p>
                 <i class="bi bi-chevron-double-right"></i>
-                All the Courses Run By GICT / Vocational Course Run by SGWTI /Yoga Course Run by SGYS Is Valid for self
-                employment.
+                GICT Computer continually assess and improve our teaching methods and curriculum based on industry feedback and emerging trends.
             </p>
 
             <p>
@@ -68,24 +65,24 @@
 
             <p>
                 <i class="bi bi-chevron-double-right"></i>
-                Monthly Report to be sent in proper format to Head Office by Branch head.
+                GICT Computer establish partnerships with local businesses and industries for internships, job placements, and collaborative proje
             </p>
 
             <p>
                 <i class="bi bi-chevron-double-right"></i>
-                No amount of any kind will be refunded.
+                GICT Computer cultivate a culture of lifelong learning, encouraging alumni and the community to continue their education.
             </p>
 
             <p>
                 <i class="bi bi-chevron-double-right"></i>
-                All institutes will work according to the rules & regulation of the organization & I agree with all the
-                rules & regulation of the organization..
+                GICT Computer promote diversity and inclusion in the tech industry by actively encouraging underrepresented groups to pursue computer education.
+
             </p>
 
         </div>
         <div class="col-sm-3">
-            <img src="https://GICTindia.org/uploads/images/9bca85d5-d323-4b21-a5b9-8542dcea8509.jpeg"
-                class="img-fluid img-thumbnail" />
+            <img src="assets/images/rule & regulation.jpg"
+                class="img-fluid h-50 img-thumbnail" />
         </div>
     </div>
 </div>
