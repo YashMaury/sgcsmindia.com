@@ -2,10 +2,8 @@
   background: url(uploads/static/images/footer-bg.jpg) #404040 no-repeat;
   background-size: 100%;>
   background-size: cover;
-  background-blend-mode: multiply;
-  ">
+  background-blend-mode: multiply;">
     <div class="container content">
-
         <div class="container text-center text-md-left">
             <div class="row">
 
@@ -21,10 +19,8 @@
                         <li><a href="contact.php">Contact Us</a></li>
                     </ul>
 
-                </div>
-
+</div>
                 <hr class="clearfix w-100 d-md-none">
-
                 <div class="col-md-4 mx-auto">
                     <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Useful Links</h5>
 
@@ -36,7 +32,6 @@
                         <li><a href="bank-details.php">Payment Mode</a></li>
                         <li><a href="jobs.php">Jobs</a></li>
                     </ul>
-
                 </div>
 
                 <hr class="clearfix w-100 d-md-none">

@@ -1,4 +1,4 @@
-<?php include "include/header.php"; ?>
+<?php include "include/header.php";?>
 
 <div class="achivements" style="background: url(assets/images/slide/breadcrumb.jpg);padding: 50px;">
     <div class="sec-title mb-3 text-center">
