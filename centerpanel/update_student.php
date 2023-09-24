@@ -66,8 +66,8 @@ $result = json_decode($response);
 
                                             <p>
                                                 <strong>Course :</strong> <br />
-                                                <select name="course" class=form-control required>
-                                                    <option value="<?php echo $value1->student_name ;?>" selected></option>
+                                                <select name="course" class="form-control" required>
+                                                    <option value="<?php echo $value1->course ;?>" selected></option>
                                                     <option value="Basic &amp; Typing (6 Months)">Basic &amp; Typing (6 Months)
                                                     </option>
                                                     <option value="Diploma In Basic Programming (DBP) (6 Months)">Diploma In
@@ -297,7 +297,7 @@ $result = json_decode($response);
                                             </p>
                                             <p>
                                                 <strong>Password :</strong> <br />
-                                                <input type="password" name="student_password" value="<?php echo $value1->student_password ;?>" class="form-control"
+                                                <input type="text" name="student_password" value="<?php echo $value1->student_password ;?>" class="form-control"
                                                     required />
                                             </p>
                                             <p>
