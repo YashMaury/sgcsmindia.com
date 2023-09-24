@@ -30,7 +30,7 @@ $decode = (json_decode($response));
 // echo $decode->message;
 
 if ($decode->message !== "Request Failed") {
-
+  echo "done";
   $result = JWT::decode($decode->access_token, $SECRET_KEY, array('HS256'));
 
   if (
@@ -51,11 +51,12 @@ if ($decode->message !== "Request Failed") {
     $_SESSION["JWT"] = $result;
     // $_SESSION['MEMBBER_FROM'] = $result->data->createdOn;
 
-    header('Location:../../studentlogin.php');
+    $msg="Login Successfull"; 
+    header('Location:../../studentlogin.php?msg='.$msg);
   } else {
-    //  echo $msg="Incorrect User Email or Password"; 
+    $msg="Incorrect User Email or Password"; 
     // echo "0";
-    header('Location:../../studentlogin.php');
+    header('Location:../../studentlogin.php?msg='.$msg);
   }
 } else {
   // print_r($decode->message);

@@ -40,7 +40,7 @@ $result = json_decode($response);
 
         <div class="col">
             <div class="card">
-                <a href="admin/gallery/studyMaterial/<?php echo $value1->id;?>/<?php echo $value1->id;?>.pdf" target="_blank">
+                <a href="centerpanel/gallery/studyMaterial/<?php echo $value1->id;?>/<?php echo $value1->id;?>.pdf" target="_blank">
                     <img src="assets/images/social/pdf.png" class="bi bi-file-earmark-arrow-down-fill card-img-top" style="font-size: 100px;" />
                 </a>
                 <div class="card-body">

@@ -11,15 +11,15 @@ if (isset($_POST["submit"])) {
     $student_email = $_POST["student_email"];
     $student_password = $_POST["student_password"];
     $createdOn = date("Y-m-d h:i:s");
-    $createdBy = ucwords($_POST["student_name"]);
+    $createdBy = ucwords($_SESSION['FRANCHISE_ID']);
 
     $url = $URL . "student/student_registration.php";
     $url_read_maxId = $URL . "student/read_maxId.php";
 
     $data_maxId = array();
     $maxId_postdata = json_encode($data_maxId);
-    $result_max_notification = url_encode_Decode($url_read_maxId, $maxId_postdata);
-    $id = $result_max_notification->records[0]->id + 1;
+    $result_max_student = url_encode_Decode($url_read_maxId, $maxId_postdata);
+    $id = $result_max_student->records[0]->id + 1;
 
     /*--- update the images in img folder inside user folder ---*/
 
@@ -31,7 +31,7 @@ if (isset($_POST["submit"])) {
     } else {
         // echo "unable to create directory";
     }
-    $target_file = $target_dir . $id . "/" . $id . ".png";
+    $target_file = $target_dir . $id . "/" . $student_name . ".png";
 
     $uploadOk = 1;
     $FileType = strtolower(pathinfo($target_file, PATHINFO_EXTENSION));

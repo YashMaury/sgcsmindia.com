@@ -62,7 +62,7 @@ $result = json_decode($response);
                     foreach ($result as $key => $value) {
                       foreach ($value as $key1 => $value1) {
                         ++$counter;
-                        $student_profile_image = $STUDENT_IMG_PATH . $value1->id . "/" . $value1->id . ".png";
+                        $student_profile_image = $STUDENT_IMG_PATH . $value1->id . "/" . $value1->student_name . ".png";
                         ?>
 
                         <td>
@@ -76,6 +76,7 @@ $result = json_decode($response);
                         </td>
                         <td>
                           <?php echo $value1->student_name; ?>
+                          <?php echo $value1->id; ?>
                         </td>
 
                         <td>
@@ -94,9 +95,16 @@ $result = json_decode($response);
                         <td>
                           <button class="btn btn-sm btn-info"><i class="bi bi-pencil me-3"></i>Edit</button>
                         </td>
+
                         <td>
-                          <button class="btn btn-sm btn-danger"><i class="bi bi-trash me-3"></i>Delete</button>
+                          <form action="action/student_delete_post.php" method="post">
+                            <input type="hidden" name="id" value="<?php echo $value1->id; ?>">
+                            <input type="hidden" name="student_name" value="<?php echo $value1->student_name; ?>">
+                            <button class="btn btn-sm btn-danger" name="delete" type="submit">
+                              <i class="bi bi-trash me-3"></i>Delete</button>
+                          </form>
                         </td>
+
                       </tr>
 
                     <?php }

@@ -290,7 +290,7 @@ class Franchise
 
     function franchiseLogin()
     {
-        $query = "Select id, center_name, center_director, login_email, login_password, center_state, center_district, center_block, center_city, center_pincode, center_email, center_mobile, center_message, status, createdOn, createdBy, updatedOn, updatedBy from " . $this->table_name . " where login_email=:login_email and login_password=:login_password";
+        $query = "Select id, center_name, center_director, login_email, login_password, center_state, center_district, center_block, center_city, center_pincode, center_email, center_mobile, center_message, status, createdOn, createdBy, updatedOn, updatedBy from " . $this->table_name . " where login_email=:login_email and login_password=:login_password and status=1";
         $stmt = $this->conn->prepare($query);
         $stmt->bindParam(":login_email", $this->login_email);
         $stmt->bindParam(":login_password", $this->login_password);

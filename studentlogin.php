@@ -13,10 +13,10 @@
     </div>
 </div>
 
-<form action="admin/action/student_login_post.php" method="post" accept-charset="utf-8">
+<form action="centerpanel/action/student_login_post.php" method="post" accept-charset="utf-8">
     <div class="container content">
         <div class="sec-title mb-3 text-center">
-            <h2 class="mb-0">STUDENT LOGIN
+            <h2 class="mb-0">STUDENT LOGIN <?php echo $_SESSION["STUDENT_NAME"]."-----".$_SESSION["STUDENT_ID"]?>
             </h2>
         </div>
         <div class="mb-4" align="justify">
@@ -28,9 +28,9 @@
                 <strong>Password :</strong> <br />
                 <input type="password" name="student_password" value="" class="form-control" placeholder="Password" />
             </p>
-            <p>
+            <!-- <p>
                 If not registered, click <a href="student_registration.php">here</a> to register.
-            </p>
+            </p> -->
             <p>
                 <button type="submit" name="submit" class="btn btn-primary">LOGIN</button>
             </p>
