@@ -15,7 +15,7 @@
 
 <div class="container mt-4">
     <center>
-        <h1>Our Dream</h1>
+        <h1>Director's Message</h1>
     </center>
     <div class="miss">
         <img src="assets/images/our dream.jpeg" alt="">
