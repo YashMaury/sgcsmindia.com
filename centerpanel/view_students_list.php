@@ -93,7 +93,14 @@ $result = json_decode($response);
                         </td>
 
                         <td>
-                          <button class="btn btn-sm btn-info"><i class="bi bi-pencil me-3"></i>Edit</button>
+                          <form action="action/update_student_post.php" method="post">
+                            <input type="hidden" name="id" value="<?php echo $value1->id; ?>">
+                            <input type="hidden" name="student_name" value="<?php echo $value1->student_name; ?>">
+                            <input type="hidden" name="student_mobile" value="<?php echo $value1->student_mobile; ?>">
+                            <input type="hidden" name="student_course" value="<?php echo $value1->student_course; ?>">
+                            <input type="hidden" name="student_password" value="<?php echo $value1->student_password; ?>">
+                            <button class="btn btn-sm btn-info" type="submit" name="update_student"><i class="bi bi-pencil me-3"></i>Edit</button>
+                          </form>
                         </td>
 
                         <td>

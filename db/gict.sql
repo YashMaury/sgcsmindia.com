@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Sep 14, 2023 at 02:42 AM
+-- Generation Time: Sep 24, 2023 at 05:32 AM
 -- Server version: 5.7.11
 -- PHP Version: 5.6.18
 
@@ -70,6 +70,13 @@ CREATE TABLE `franchise_registration` (
   `updatedBy` varchar(200) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
+--
+-- Dumping data for table `franchise_registration`
+--
+
+INSERT INTO `franchise_registration` (`id`, `center_name`, `center_director`, `login_email`, `login_password`, `center_state`, `center_district`, `center_block`, `center_city`, `center_pincode`, `center_email`, `center_mobile`, `center_message`, `status`, `createdOn`, `createdBy`, `updatedOn`, `updatedBy`) VALUES
+(1, 'GICT COMPUTER', 'Brijendra Sir', 'gictcomputer.edu@gmail.com', 'brijendra897443', 'Uttar Pradesh', 'Jaunpur', 'Mungra Badshahpur', 'Jaunpur', '222202', 'gictcomputer.edu@gmail.com', '9988757620', 'no message no message no message no message no message no message no message no message no message no message no message no message no message ', 1, '2023-09-24 04:27:02', 'GICT COMPUTER', '2023-09-24 04:17:51', 'Admin');
+
 -- --------------------------------------------------------
 
 --
@@ -103,6 +110,14 @@ CREATE TABLE `student_registration` (
   `createdOn` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
   `createdBy` varchar(200) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `student_registration`
+--
+
+INSERT INTO `student_registration` (`id`, `franchise_id`, `student_name`, `student_mobile`, `course`, `student_email`, `student_password`, `status`, `createdOn`, `createdBy`) VALUES
+(11, '1', 'Yash', '8945632', 'Basic &amp; Typing (6 Months)', 'yash@gmail.com', '213645', 0, '2023-09-24 05:24:57', '1'),
+(12, '1', 'Yash', '789465132', 'Basic &amp; Typing (6 Months)', 'yash@gmail.com', '123456789', 0, '2023-09-24 05:25:27', '1');
 
 -- --------------------------------------------------------
 
@@ -170,17 +185,17 @@ ALTER TABLE `franchise_registration`
 -- AUTO_INCREMENT for table `imagegallery`
 --
 ALTER TABLE `imagegallery`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 --
 -- AUTO_INCREMENT for table `student_registration`
 --
 ALTER TABLE `student_registration`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 --
 -- AUTO_INCREMENT for table `studymaterial`
 --
 ALTER TABLE `studymaterial`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
