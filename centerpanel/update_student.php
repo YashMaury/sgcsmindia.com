@@ -1,6 +1,6 @@
 <?php include "include/header.php";
 $url = $URL . "student/read_student_by_id.php";
-$id = $_POST['FRANCHISE_ID'];
+$id = $_POST['id'];
 $data = array("id" => $id);
 //print_r($data);
 $postdata = json_encode($data);
@@ -61,12 +61,13 @@ $result = json_decode($response);
                                             <p>
                                                 <strong>Mobile :</strong> <br />
                                                 <input type="number" maxlength="10" minlength="10" name="student_mobile"
-                                                    value="" class="form-control" required />
+                                                    value="<?php echo $value1->student_mobile ;?>" class="form-control" required />
                                             </p>
 
                                             <p>
                                                 <strong>Course :</strong> <br />
                                                 <select name="course" class=form-control required>
+                                                    <option value="<?php echo $value1->student_name ;?>" selected></option>
                                                     <option value="Basic &amp; Typing (6 Months)">Basic &amp; Typing (6 Months)
                                                     </option>
                                                     <option value="Diploma In Basic Programming (DBP) (6 Months)">Diploma In
@@ -291,12 +292,12 @@ $result = json_decode($response);
                                             </p>
                                             <p>
                                                 <strong>Email :</strong> <br />
-                                                <input type="email" name="student_email" value="" class="form-control"
+                                                <input type="email" name="student_email" value="<?php echo $value1->student_email ;?>" class="form-control"
                                                     required />
                                             </p>
                                             <p>
                                                 <strong>Password :</strong> <br />
-                                                <input type="password" name="student_password" value="" class="form-control"
+                                                <input type="password" name="student_password" value="<?php echo $value1->student_password ;?>" class="form-control"
                                                     required />
                                             </p>
                                             <p>
@@ -306,6 +307,16 @@ $result = json_decode($response);
                                             </p>
 
                                             <p>
+                                            <form action="action/update_student_post.php" method="post">
+                            <input type="hidden" name="id" value="<?php echo $value1->id; ?>">
+                            <input type="hidden" name="franchise_id" value="<?php echo $value1->franchise_id; ?>">
+                            <input type="hidden" name="student_name" value="<?php echo $value1->student_name; ?>">
+                            <input type="hidden" name="student_mobile" value="<?php echo $value1->student_mobile; ?>">
+                            <input type="hidden" name="course" value="<?php echo $value1->course; ?>">
+                            <input type="hidden" name="student_email" value="<?php echo $value1->student_email; ?>">
+                            <input type="hidden" name="student_password" value="<?php echo $value1->student_password; ?>">
+                            <button class="btn btn-sm btn-info" type="submit" name="update_student"><i class="bi bi-pencil me-3"></i>Edit</button>
+                          </form>
 
                                                 <button type="submit" name="submit" class="btn btn-primary">Submit</button>
 
