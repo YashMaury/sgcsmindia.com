@@ -73,10 +73,10 @@ $result = json_decode($response);
                                         <strong>Correct Option : (1,2,3,4)</strong> <br />
                                         <input type="text" name="correct_option" value="" class="form-control" required />
                                     </p>
-                                    <p>
+                                    <!-- <p>
                                         <strong>Question Image : (if any)</strong> <br />
                                         <input type="file" name="question_image" value="" class="form-control" />
-                                    </p>
+                                    </p> -->
 
                                     <p>
                                         <input type="hidden" name="exam_id" value="<?php echo $_POST['exam_id'];?>">
