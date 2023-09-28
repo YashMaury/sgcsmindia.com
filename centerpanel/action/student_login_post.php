@@ -3,10 +3,10 @@ header('Access-Control-Allow-Origin: *');
 header('Access-Control-Allow-Methods: POST, GET, OPTIONS');
 error_reporting(0);
 include '../../constant.php';
-include '../php-jwt/src/JWT.php';
-include '../php-jwt/src/ExpiredException.php';
-include '../php-jwt/src/SignatureInvalidException.php';
-include '../php-jwt/src/BeforeValidException.php';
+include '../../admin/php-jwt/src/JWT.php';
+include '../../admin/php-jwt/src/ExpiredException.php';
+include '../../admin/php-jwt/src/SignatureInvalidException.php';
+include '../../admin/php-jwt/src/BeforeValidException.php';
 use \Firebase\JWT\JWT;
 
 $student_email = $_POST["student_email"];
