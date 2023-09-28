@@ -90,9 +90,10 @@ function CheckResult() {
         var a = r.find("a").attr("data-href");
         var currectAns = $("#" + a).find(".hdfCurrectAns").val();
         var currectQue = $("#" + a).find(".question-title").text();
+        var nameQue = $("#" + a).find(".question-name").text();
         TotalQuestion = TotalQuestion + 1;
         var tr = $('<tr></tr>');
-        tr.append('<td>' + currectQue + '</td>');
+        tr.append('<td>' + currectQue + nameQue + '</td>');
         var ansStatus = "Wrong";
         var selectedAns = '';
         if (r.children().hasClass("que-save") || r.children().hasClass("que-save-mark")) {
@@ -106,10 +107,10 @@ function CheckResult() {
                 }
             });
             if (ansStatus == 'Correct') {
-                score = score + 4;
+                score = score + 1;
                 TotalCorrect = TotalCorrect + 1;
             } else {
-                score = score - 1;
+                score = score - 0;
                 TotalWrong = TotalWrong + 1;
             }
             TotalAttempted = TotalAttempted + 1;

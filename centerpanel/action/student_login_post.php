@@ -50,10 +50,9 @@ if ($decode->message !== "Request Failed") {
     $_SESSION["STUDENT_EMAIL"] = $studentEmail;
     $_SESSION["STUDENT_PASSWORD"] = $studentPassword;
     $_SESSION["JWT"] = $result;
-    // $_SESSION['MEMBBER_FROM'] = $result->data->createdOn;
 
     echo $msg = "Login Successfull";
-    header('Location:../../Instruction_exam.php?type=' . $exam_id);
+    header('Location:../../Instruction_exam.php?type=' . $exam_id.'&userId='.base64_encode($studentId));
   } else {
     echo $msg = "Incorrect User Email or Password";
     header('Location:../../studentlogin.php?msg=' . $msg);

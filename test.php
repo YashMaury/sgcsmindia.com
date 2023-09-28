@@ -11,6 +11,19 @@ $response = curl_exec($client);
 //print_r($response);
 $result = json_decode($response);
 //print_r($result);
+
+$que_url = $URL . "student/read_student_by_id.php";
+$student_id = $_GET['id'];
+$data = array("id" => $student_id);
+//print_r($data);
+$que_postdata = json_encode($data);
+$client = curl_init($que_url);
+curl_setopt($client, CURLOPT_RETURNTRANSFER, 1);
+curl_setopt($client, CURLOPT_POSTFIELDS, $que_postdata);
+$response_question = curl_exec($client);
+// print_r($response_question);
+$result_question = json_decode($response_question);
+// print_r($result_question);
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -22,7 +35,7 @@ $result = json_decode($response);
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="shortcut icon" href="exam_assets/img/favicon.ico">
-    <title>NTA</title>
+    <title></title>
     <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
     <link href="exam_assets/css/font-awesome.min.css" rel="stylesheet" />
     <link href="exam_assets/css/custom.css" rel="stylesheet" />
@@ -123,17 +136,17 @@ $result = json_decode($response);
 
                         <div class="clear-xs "></div>
                         <div class="col-md-3 text-right">
-                            <div style="padding: 15px 0 0 0">
+                            <!-- <div style="padding: 15px 0 0 0">
                                 <a class="btn btn-primary pull-left full-width" target="_blank" href="exam_assets/pdf/JEE-Main-2018.pdf"><i class="fa fa-download"></i> Download Question</a>
-                            </div>
+                            </div> -->
                         </div>
                         <div class="clear-xs"></div>
                         <div class="col-md-2 col-sm-12" id="divdrplngcng" @*style="margin: 15px 0 0 0" *@>
                             <text style="color:white; font-weight:bold">Paper Language:</text>
                             <select class="form-control drplanguage">
                                 <option selected value="english">English</option>
-                                <option value="hindi">Hindi</option>
-                                <option value="gujarati">Gujarati</option>
+                                <!-- <option value="hindi">Hindi</option> -->
+                                <!-- <option value="gujarati">Gujarati</option> -->
                             </select>
                             <input type="hidden" id="hdfCurrentLng" value="English" />
                         </div>
@@ -166,9 +179,10 @@ $result = json_decode($response);
                                                         <input type="hidden" value="1" class="hdfPaperSetID">
                                                         <input type="hidden" value="<?php echo $value1->correct_option ;?>" class="hdfCurrectAns">
                                                         <div class="question-height">
-                                                            <h4 class="question-title"> Question <?php echo ++$que_counter ;?>: <img src="exam_assets/img/QuizIcons/down.png" class="btndown pull-right"> </h4>
-                                                            <!-- <img alt="Question" src="exam_assets/img/Question/JEEMAIN/Paper1/English/1.png" class="img-responsive"> <br> -->
-                                                            <p><?php echo $value1->question_name ;?></p>
+                                                            <h4 class="question-title"> 
+                                                                Question <?php echo ++$que_counter ;?>: 
+                                                            </h4>
+                                                            <p class="question-name"><?php echo $value1->question_name ;?></p>
                                                             <table class="table table-borderless mb0">
                                                                 <tbody>
                                                                     <tr>
@@ -185,7 +199,6 @@ $result = json_decode($response);
                                                                     </tr>
                                                                 </tbody>
                                                             </table>
-                                                            <h4 class="question-footer"> <img src="exam_assets/img/QuizIcons/up.png" class="btnup pull-right"> </h4>
                                                         </div>
                                                     </div>
 
@@ -259,8 +272,8 @@ $result = json_decode($response);
                                     foreach ($result as $key => $value) {
                                     foreach ($value as $key1 => $value1) {
                                     ?>
-                                    <li class="active" data-seq="1"><a class="test-ques que-not-answered" href="javascript:void(0);" data-href="page<?php echo ++$page_counter ?>"><?php echo $page_counter ?></a></li>
-                                    <!-- <li data-seq="1"><a class="test-ques que-not-attempted" href="javascript:void(0);" data-href="page<?php //echo ++$page_counter ?>">02</a></li> -->
+                                    <!-- <li class="active" data-seq="1"><a class="test-ques que-not-answered" href="javascript:void(0);" data-href="page<?php //echo ++$page_counter ?>"><?php //echo $page_counter ?></a></li> -->
+                                    <li data-seq="1"><a class="test-ques que-not-attempted" href="javascript:void(0);" data-href="page<?php echo ++$page_counter ?>"><?php echo $page_counter ?></a></li>
                                     <?php } } ?>
                                 </ul>
                             </div>
@@ -275,7 +288,7 @@ $result = json_decode($response);
                                 <table class="table table-bordered table-condensed">
                                     <thead>
                                         <tr>
-                                            <th>Section Name</th>
+                                            <th>Exam Name</th>
                                             <th>No of Questions</th>
                                             <th>Answered</th>
                                             <th>Not Answered</th>
@@ -286,7 +299,7 @@ $result = json_decode($response);
                                     </thead>
                                     <tbody>
                                         <tr>
-                                            <td class="">Paper 1</td>
+                                            <td class=""><?php echo base64_decode($_GET['id']) ?></td>
                                             <td class="lblTotalQuestion"></td>
                                             <td class="lblTotalSaved"></td>
                                             <td class="lblNotAttempted"></td>
@@ -353,7 +366,7 @@ $result = json_decode($response);
                                         <thead>
                                             <tr>
                                                 <th>Question No.</th>
-                                                <th>selected Option</th>
+                                                <th>Selected Option</th>
                                                 <th>Status</th>
                                                 <th>Currect Option</th>
                                             </tr>
