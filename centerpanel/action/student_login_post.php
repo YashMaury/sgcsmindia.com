@@ -3,14 +3,15 @@ header('Access-Control-Allow-Origin: *');
 header('Access-Control-Allow-Methods: POST, GET, OPTIONS');
 error_reporting(0);
 include '../../constant.php';
-include '../php-jwt/src/JWT.php';
-include '../php-jwt/src/ExpiredException.php';
-include '../php-jwt/src/SignatureInvalidException.php';
-include '../php-jwt/src/BeforeValidException.php';
+include '../../admin/php-jwt/src/JWT.php';
+include '../../admin/php-jwt/src/ExpiredException.php';
+include '../../admin/php-jwt/src/SignatureInvalidException.php';
+include '../../admin/php-jwt/src/BeforeValidException.php';
 use \Firebase\JWT\JWT;
 
 $student_email = $_POST["student_email"];
 $student_password = $_POST["student_password"];
+$exam_id = $_POST["exam_id"];
 
 $url = $URL . "student/student_login.php";
 $data = array("student_email" => $student_email, "student_password" => $student_password);
@@ -30,7 +31,7 @@ $decode = (json_decode($response));
 // echo $decode->message;
 
 if ($decode->message !== "Request Failed") {
-  echo "done";
+  // echo "done";
   $result = JWT::decode($decode->access_token, $SECRET_KEY, array('HS256'));
 
   if (
@@ -51,17 +52,16 @@ if ($decode->message !== "Request Failed") {
     $_SESSION["JWT"] = $result;
     // $_SESSION['MEMBBER_FROM'] = $result->data->createdOn;
 
-    $msg="Login Successfull"; 
-    header('Location:../../studentlogin.php?msg='.$msg);
+    echo $msg = "Login Successfull";
+    header('Location:../../Instruction_exam.php?type=' . $exam_id);
   } else {
-    $msg="Incorrect User Email or Password"; 
-    // echo "0";
-    header('Location:../../studentlogin.php?msg='.$msg);
+    echo $msg = "Incorrect User Email or Password";
+    header('Location:../../studentlogin.php?msg=' . $msg);
   }
 } else {
   // print_r($decode->message);
   header('Location:../../studentlogin.php');
-  // echo "Request Failed";
+  echo "Request Failed To Login";
   // echo "0";
 }
 

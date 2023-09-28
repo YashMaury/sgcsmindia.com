@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/about.css">
     <link rel="stylesheet" href="assets/css/mission.css">
+    <script src="exam_assets/js/jquery.min.js" type="text/javascript"></script>
 
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script type="text/javascript"
@@ -134,8 +135,8 @@
                             </a>
 
                             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <a class="dropdown-item" href="studentlogin.php">Student Login</a>
-                                <a class="dropdown-item" href="exam-login.php">Exam Registration</a>
+                                <!-- <a class="dropdown-item" href="studentlogin.php">Student Login</a> -->
+                                <a class="dropdown-item" href="exam-login.php">Exam Login</a>
                                 <a class="dropdown-item" href="student-details.php">Student Information</a>
                                 <a class="dropdown-item" href="online-result.php">Online Result</a>
                             </div>

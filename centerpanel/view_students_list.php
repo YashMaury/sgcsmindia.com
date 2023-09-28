@@ -47,6 +47,7 @@ $result = json_decode($response);
                     <th>Image</th>
                     <th>Name</th>
                     <th>Email</th>
+                    <th>Password</th>
                     <th>Phone</th>
                     <th>Course</th>
                     <th>Registered On</th>
@@ -76,11 +77,13 @@ $result = json_decode($response);
                         </td>
                         <td>
                           <?php echo $value1->student_name; ?>
-                          <?php echo $value1->id; ?>
                         </td>
 
                         <td>
                           <?php echo $value1->student_email; ?>
+                        </td>
+                        <td>
+                          <?php echo $value1->student_password; ?>
                         </td>
                         <td>
                           <?php echo $value1->student_mobile; ?>
@@ -93,12 +96,14 @@ $result = json_decode($response);
                         </td>
 
                         <td>
-                          <form action="action/update_student_post.php" method="post">
+                          <form action="update_student.php" method="post">
                             <input type="hidden" name="id" value="<?php echo $value1->id; ?>">
+                            <!-- <input type="hidden" name="franchise_id" value="<?php echo $value1->franchise_id; ?>">
                             <input type="hidden" name="student_name" value="<?php echo $value1->student_name; ?>">
                             <input type="hidden" name="student_mobile" value="<?php echo $value1->student_mobile; ?>">
-                            <input type="hidden" name="student_course" value="<?php echo $value1->student_course; ?>">
-                            <input type="hidden" name="student_password" value="<?php echo $value1->student_password; ?>">
+                            <input type="hidden" name="course" value="<?php echo $value1->course; ?>">
+                            <input type="hidden" name="student_email" value="<?php echo $value1->student_email; ?>">
+                            <input type="hidden" name="student_password" value="<?php echo $value1->student_password; ?>"> -->
                             <button class="btn btn-sm btn-info" type="submit" name="update_student"><i class="bi bi-pencil me-3"></i>Edit</button>
                           </form>
                         </td>

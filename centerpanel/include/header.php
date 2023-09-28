@@ -256,7 +256,7 @@ if (isset($_SESSION["FRANCHISE_ID"]) and isset($_SESSION["FRANCHISE_NAME"]) and 
                 <div class="px-4 py-5">
                     <a href="index.php" class="navbar-brand">
                         <!-- <img src="assets/images/logo/freshcart-logo.svg" alt=""> -->
-                        <h3><?php echo $_SESSION['FRANCHISE_NAME'];?> - ADMIN</h3>
+                        <h6><?php echo $_SESSION['FRANCHISE_NAME'];?> - ADMIN</h6>
                     </a>
                 </div>
                 <div class="navbar-vertical-content flex-grow-1" data-simplebar="">
@@ -274,34 +274,34 @@ if (isset($_SESSION["FRANCHISE_ID"]) and isset($_SESSION["FRANCHISE_NAME"]) and 
                             <span class="nav-label">Site Managements</span>
                         </li>
 
-                        <!-- <li class="nav-item">
+                        <li class="nav-item">
                             <a class="nav-link collapsed " href="#" data-bs-toggle="collapse"
-                                data-bs-target="#navRegisteredFranchise" aria-expanded="false" aria-controls="navRegisteredFranchise">
+                                data-bs-target="#navExam" aria-expanded="false" aria-controls="navExam">
                                 <div class="d-flex align-items-center">
                                     <span class="nav-link-icon"> <i class="bi bi-bag"></i></span>
-                                    <span class="nav-link-text">Franchise</span>
+                                    <span class="nav-link-text">Exam</span>
                                 </div>
                             </a>
-                            <div id="navRegisteredFranchise" class="collapse " data-bs-parent="#sideNavbar">
+                            <div id="navExam" class="collapse " data-bs-parent="#sideNavbar">
                                 <ul class="nav flex-column">
                                     <li class="nav-item ">
-                                        <a class="nav-link " href="view_franchise_list.php">
-                                            Registered Franchise List
+                                        <a class="nav-link " href="create_exam.php">
+                                            Create Exam
                                         </a>
                                     </li>
                                     <li class="nav-item ">
-                                        <a class="nav-link " href="view_approved_franchise_list.php">
-                                            Approved Franchise List
+                                        <a class="nav-link " href="view_exam_list.php">
+                                            Exam List
                                         </a>
                                     </li>
                                     <li class="nav-item ">
-                                        <a class="nav-link " href="view_rejected_franchise_list.php">
-                                            Rejected Franchise List
+                                        <a class="nav-link " href="view_question_list.php">
+                                            View Question List
                                         </a>
                                     </li>
                                 </ul>
                             </div>
-                        </li> -->
+                        </li>
                         <li class="nav-item">
                             <a class="nav-link collapsed " href="#" data-bs-toggle="collapse"
                                 data-bs-target="#navStudentSection" aria-expanded="false" aria-controls="navStudentSection">
@@ -402,34 +402,34 @@ if (isset($_SESSION["FRANCHISE_ID"]) and isset($_SESSION["FRANCHISE_NAME"]) and 
                             <span class="nav-label">Site Managements</span>
                         </li>
 
-                        <!-- <li class="nav-item">
+                        <li class="nav-item">
                             <a class="nav-link collapsed " href="#" data-bs-toggle="collapse"
-                                data-bs-target="#navRegisteredFranchise" aria-expanded="false" aria-controls="navRegisteredFranchise">
+                                data-bs-target="#navExam" aria-expanded="false" aria-controls="navExam">
                                 <div class="d-flex align-items-center">
                                     <span class="nav-link-icon"> <i class="bi bi-bag"></i></span>
-                                    <span class="nav-link-text">Franchise</span>
+                                    <span class="nav-link-text">Exam</span>
                                 </div>
                             </a>
-                            <div id="navRegisteredFranchise" class="collapse " data-bs-parent="#sideNavbar">
+                            <div id="navExam" class="collapse " data-bs-parent="#sideNavbar">
                                 <ul class="nav flex-column">
                                     <li class="nav-item ">
-                                        <a class="nav-link " href="view_franchise_list.php">
-                                            Registered Franchise List
+                                        <a class="nav-link " href="create_exam.php">
+                                            Create Exam
                                         </a>
                                     </li>
                                     <li class="nav-item ">
-                                        <a class="nav-link " href="view_approved_franchise_list.php">
-                                            Approved Franchise List
+                                        <a class="nav-link " href="view_exam_list.php">
+                                            Exam List
                                         </a>
                                     </li>
                                     <li class="nav-item ">
-                                        <a class="nav-link " href="view_rejected_franchise_list.php">
-                                            Rejected Franchise List
+                                        <a class="nav-link " href="view_question_list.php">
+                                            View Question List
                                         </a>
                                     </li>
                                 </ul>
                             </div>
-                        </li> -->
+                        </li>
                         <li class="nav-item">
                             <a class="nav-link collapsed " href="#" data-bs-toggle="collapse"
                                 data-bs-target="#navStudentSection" aria-expanded="false" aria-controls="navStudentSection">
