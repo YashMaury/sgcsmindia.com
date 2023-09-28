@@ -12,32 +12,32 @@ function giplCurl($url, $postdata)
 }
 
 
-$url_read_franchise_count = $URL . "dashboard/read_franchise_count.php";
-$url_read_student_count = $URL . "dashboard/read_student_count_by_franchise.php";
+$url_read_exam_count = $URL . "dashboard/read_exam_count.php";
+// $url_read_student_count = $URL . "dashboard/read_student_count_by_franchise.php";
 
-$data_pending = array("status" => '0');
-$postdata_pending = json_encode($data_pending);
-$result_pendin_reg = giplCurl($url_read_franchise_count, $postdata_pending);
-// print_r($result_pendin_reg);
-$pending_franchise = $result_pendin_reg->records[0]->franchise_count;
+$data_exam = array();
+$postdata_exam = json_encode($data_exam);
+$result_exam = giplCurl($url_read_exam_count, $postdata_exam);
+// print_r($result_exam);
+$total_exam_count = $result_exam->records[0]->exam_count;
 
-$data_approved = array("status" => '1');
-$postdata_approved = json_encode($data_approved);
-$result_approved_users = giplCurl($url_read_franchise_count, $postdata_approved);
-// print_r($result_approved_users);
-$approved_franchise = $result_approved_users->records[0]->franchise_count;
+// $data_approved = array("status" => '1');
+// $postdata_approved = json_encode($data_approved);
+// $result_approved_users = giplCurl($url_read_franchise_count, $postdata_approved);
+// // print_r($result_approved_users);
+// $approved_franchise = $result_approved_users->records[0]->franchise_count;
 
-$data_rejected = array("status" => '2');
-$postdata_rejected = json_encode($data_rejected);
-$result_rejected = giplCurl($url_read_franchise_count, $postdata_rejected);
-// print_r($result_rejected);
-$rejected_franchise = $result_rejected->records[0]->franchise_count;
+// $data_rejected = array("status" => '2');
+// $postdata_rejected = json_encode($data_rejected);
+// $result_rejected = giplCurl($url_read_franchise_count, $postdata_rejected);
+// // print_r($result_rejected);
+// $rejected_franchise = $result_rejected->records[0]->franchise_count;
 
-$data_student = array("franchise_id" => '');
-$postdata_student = json_encode($data_student);
-$result_student = giplCurl($url_read_student_count, $postdata_student);
-// print_r($result_student);
-$student_count = $result_student->records[0]->student_count;
+// $data_student = array("franchise_id" => '');
+// $postdata_student = json_encode($data_student);
+// $result_student = giplCurl($url_read_student_count, $postdata_student);
+// // print_r($result_student);
+// $student_count = $result_student->records[0]->student_count;
 
 // $data_user_update_req = array("status" => '0', "userType" => '2');
 // $postdata_user_update_req = json_encode($data_user_update_req);
@@ -82,7 +82,7 @@ $student_count = $result_student->records[0]->student_count;
                     <div class="card-body p-6">
                         <div class="d-flex justify-content-between align-items-center mb-6">
                             <div>
-                                <h4 class="mb-0 fs-5">Registered Franchise</h4>
+                                <h4 class="mb-0 fs-5">Total Exam</h4>
                             </div>
                             <div class="icon-shape icon-md bg-light-primary text-dark-primary rounded-circle">
                                 <!-- <i class="bi bi-currency-dollar fs-5"></i> -->
@@ -90,8 +90,8 @@ $student_count = $result_student->records[0]->student_count;
                             </div>
                         </div>
                         <div class="lh-1">
-                            <h1 class=" mb-2 fw-bold fs-2"><?php echo $pending_franchise; ?></h1>
-                            <span><b>Status:</b> Pending</span>
+                            <h1 class=" mb-2 fw-bold fs-2"><?php echo $total_exam_count; ?></h1>
+                            <span><b>Status:</b> Ok</span>
                         </div>
                     </div>
                 </div>
@@ -109,7 +109,7 @@ $student_count = $result_student->records[0]->student_count;
                             </div>
                         </div>
                         <div class="lh-1">
-                            <h1 class=" mb-2 fw-bold fs-2"><?php echo $approved_franchise; ?></h1>
+                            <h1 class=" mb-2 fw-bold fs-2"><?php //echo $approved_franchise; ?></h1>
                             <span><b>Status:</b> Approved</span>
                         </div>
                     </div>
@@ -128,7 +128,7 @@ $student_count = $result_student->records[0]->student_count;
                             </div>
                         </div>
                         <div class="lh-1">
-                            <h1 class=" mb-2 fw-bold fs-2"><?php echo $rejected_franchise; ?></h1>
+                            <h1 class=" mb-2 fw-bold fs-2"><?php //echo $rejected_franchise; ?></h1>
                             <span><b>Status:</b> Rejected</span>
                         </div>
                     </div>

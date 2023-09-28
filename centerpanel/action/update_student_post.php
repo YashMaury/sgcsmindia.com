@@ -3,7 +3,6 @@ include "../../constant.php";
 
 if (isset($_POST["update_student"])) {
 
-
     $id = $_POST['id'];
     $franchise_id = $_POST['franchise_id'];
     $student_name = ucwords($_POST["student_name"]);
@@ -13,7 +12,15 @@ if (isset($_POST["update_student"])) {
     $student_email = $_POST["student_email"];
     $student_password = $_POST["student_password"];
 
+    $old_name = $_POST["old_name"];
+    $student_profile_image = "../gallery/student/" . $id . "/" . $old_name . ".png";
+    $target_student_profile_image = "../gallery/student/" . $id . "/" . $student_name . ".png";
+
+    copy($student_profile_image, $target_student_profile_image);
+    unlink($student_profile_image);
+
     $url = $URL . "student/update_student.php";
+
 
     $data = array(
         "id" => $id,
@@ -29,10 +36,15 @@ if (isset($_POST["update_student"])) {
     //print_r($data);
 
     $postdata = json_encode($data);
-    $result_exam = url_encode_Decode($url, $postdata);
-    //print_r($result_exam);
+    $result_student = url_encode_Decode($url, $postdata);
+    //print_r($result_student);
 
-    header('location:../view_students_list.php');
+    if ($result_student->message = "Successfull") {
+        header('location:../view_students_list.php?msg=Student record updated');
+    } else {
+        header('location:../view_students_list.php?msg=Failed to update record');
+    }
+
 
 }
 

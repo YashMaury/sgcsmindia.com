@@ -19,7 +19,7 @@ $student = new Student($db);
 
 // get posted data
 $data = json_decode(file_get_contents("php://input"));
-var_dump($data);
+// var_dump($data);
 // mavarke sure data is not empty
 if (
 
@@ -28,7 +28,6 @@ if (
     !empty($data->student_name) &&
     !empty($data->student_mobile) &&
     !empty($data->course) &&
-    !empty($data->status) &&
     !empty($data->student_email) &&
     !empty($data->student_password)
 ) {

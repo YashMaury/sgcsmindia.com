@@ -1,3 +1,10 @@
+<?php
+if (isset($_POST["id"])) {
+
+} else {
+    header('location: view_students_list.php');
+}
+?>
 <?php include "include/header.php";
 $url = $URL . "student/read_student_by_id.php";
 $id = $_POST['id'];
@@ -23,12 +30,12 @@ $result = json_decode($response);
                 <div class="d-md-flex justify-content-between align-items-center">
                     <!-- page header -->
                     <div>
-                        <h2>Add Student</h2>
+                        <h2>Update Student</h2>
                         <!-- breacrumb -->
                         <nav aria-label="breadcrumb">
                             <ol class="breadcrumb mb-0">
                                 <li class="breadcrumb-item"><a href="index.php" class="text-inherit">Dashboard</a></li>
-                                <li class="breadcrumb-item active">Add Student</li>
+                                <li class="breadcrumb-item active">Update Student</li>
                             </ol>
                         </nav>
                     </div>
@@ -40,10 +47,10 @@ $result = json_decode($response);
                 <!-- card -->
                 <div class="card mb-6 shadow border-0">
                     <div class="card-body p-6 ">
-                        <form action="action/student_registration_post.php" method="post" enctype="multipart/form-data">
+                        <form action="action/update_student_post.php" method="post" enctype="multipart/form-data">
                             <div class="container content">
                                 <div class="sec-title mb-3 text-center">
-                                    <h2 class="mb-0">STUDENT REGISTRATION</h2>
+                                    <h2 class="mb-0">UPDATE STUDENT DETAILS</h2>
                                 </div>
                                 <div class="mb-4" align="justify">
 
@@ -55,19 +62,30 @@ $result = json_decode($response);
                                             $student_profile_image = $STUDENT_IMG_PATH . $value1->id . "/" . $value1->student_name . ".png";
                                             ?>
                                             <p>
+                                                <strong>Image :</strong><br />
+                                                <img src="<?php echo $student_profile_image; ?>" class="img-fluid img-thumbnail"
+                                                    alt="<?php echo $student_profile_image; ?>" style="width: 200px;">
+                                            </p>
+
+                                            <p>
                                                 <strong>Name :</strong> <br />
-                                                <input type="text" name="student_name" value="<?php echo $value1->student_name ;?>" class="form-control" required />
+                                                <input type="text" name="student_name"
+                                                    value="<?php echo $value1->student_name; ?>" class="form-control"
+                                                    required />
                                             </p>
                                             <p>
                                                 <strong>Mobile :</strong> <br />
                                                 <input type="number" maxlength="10" minlength="10" name="student_mobile"
-                                                    value="<?php echo $value1->student_mobile ;?>" class="form-control" required />
+                                                    value="<?php echo $value1->student_mobile; ?>" class="form-control"
+                                                    required />
                                             </p>
 
                                             <p>
                                                 <strong>Course :</strong> <br />
                                                 <select name="course" class="form-control" required>
-                                                    <option value="<?php echo $value1->course ;?>" selected></option>
+                                                    <option value="<?php echo $value1->course; ?>" selected>Selected:
+                                                        <?php echo $value1->course; ?>
+                                                    </option>
                                                     <option value="Basic &amp; Typing (6 Months)">Basic &amp; Typing (6 Months)
                                                     </option>
                                                     <option value="Diploma In Basic Programming (DBP) (6 Months)">Diploma In
@@ -292,34 +310,45 @@ $result = json_decode($response);
                                             </p>
                                             <p>
                                                 <strong>Email :</strong> <br />
-                                                <input type="email" name="student_email" value="<?php echo $value1->student_email ;?>" class="form-control"
+                                                <input type="email" name="student_email"
+                                                    value="<?php echo $value1->student_email; ?>" class="form-control"
                                                     required />
                                             </p>
                                             <p>
                                                 <strong>Password :</strong> <br />
-                                                <input type="text" name="student_password" value="<?php echo $value1->student_password ;?>" class="form-control"
+                                                <input type="text" name="student_password"
+                                                    value="<?php echo $value1->student_password; ?>" class="form-control"
                                                     required />
                                             </p>
-                                            <p>
+                                            <!-- <p>
                                                 <strong>Image :</strong> <br />
-                                                <input type="file" name="student_image" value="" class="form-control"
-                                                    required />
-                                            </p>
+                                                <input type="file" name="student_image" value="" class="form-control" />
+                                            </p> -->
 
                                             <p>
-                                            <form action="action/update_student_post.php" method="post">
-                            <input type="hidden" name="id" value="<?php echo $value1->id; ?>">
-                            <input type="hidden" name="franchise_id" value="<?php echo $value1->franchise_id; ?>">
-                            <input type="hidden" name="student_name" value="<?php echo $value1->student_name; ?>">
-                            <input type="hidden" name="student_mobile" value="<?php echo $value1->student_mobile; ?>">
-                            <input type="hidden" name="course" value="<?php echo $value1->course; ?>">
-                            <input type="hidden" name="student_email" value="<?php echo $value1->student_email; ?>">
-                            <input type="hidden" name="student_password" value="<?php echo $value1->student_password; ?>">
-                            <button class="btn btn-sm btn-info" type="submit" name="update_student"><i class="bi bi-pencil me-3"></i>Edit</button>
-                          </form>
-
-                                                <button type="submit" name="submit" class="btn btn-primary">Submit</button>
-
+                                            <!-- <form action="action/update_student_post.php" method="post"> -->
+                                                <input type="hidden" name="id" value="<?php echo $value1->id; ?>">
+                                                <input type="hidden" name="franchise_id"
+                                                    value="<?php echo $value1->franchise_id; ?>">
+                                                <input type="hidden" name="old_name"
+                                                    value="<?php echo $value1->student_name; ?>">
+                                                <input type="hidden" name="createdOn"
+                                                    value="<?php echo $value1->createdOn; ?>">
+                                                <input type="hidden" name="createdBy"
+                                                    value="<?php echo $value1->createdBy; ?>">
+                                                <!-- <input type="hidden" name="student_name"
+                                                    value="<?php //echo $value1->student_name; ?>">
+                                                <input type="hidden" name="student_mobile"
+                                                    value="<?php //echo $value1->student_mobile; ?>">
+                                                <input type="hidden" name="course" value="<?php //echo $value1->course; ?>">
+                                                <input type="hidden" name="student_email"
+                                                    value="<?php //echo $value1->student_email; ?>">
+                                                <input type="hidden" name="student_password"
+                                                    value="<?php //echo $value1->student_password; ?>"> -->
+                                                <button class="btn btn-info" type="submit" name="update_student">
+                                                    <i class="bi bi-pencil me-3"></i> Update
+                                                </button>
+                                            <!-- </form> -->
                                             </p>
                                         <?php }
                                     } ?>

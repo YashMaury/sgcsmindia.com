@@ -47,6 +47,7 @@ $result = json_decode($response);
                     <th>Image</th>
                     <th>Name</th>
                     <th>Email</th>
+                    <th>Password</th>
                     <th>Phone</th>
                     <th>Course</th>
                     <th>Registered On</th>
@@ -76,11 +77,13 @@ $result = json_decode($response);
                         </td>
                         <td>
                           <?php echo $value1->student_name; ?>
-                          <?php echo $value1->id; ?>
                         </td>
 
                         <td>
                           <?php echo $value1->student_email; ?>
+                        </td>
+                        <td>
+                          <?php echo $value1->student_password; ?>
                         </td>
                         <td>
                           <?php echo $value1->student_mobile; ?>
