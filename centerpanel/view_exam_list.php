@@ -95,7 +95,6 @@ $result = json_decode($response);
                                                 // print_r($response_question);
                                                 $result_question = json_decode($response_question);
                                                 // print_r($result_question);
-                                                $counter = 0;
                                                 foreach ($result_question as $key => $value) {
                                                     foreach ($value as $key1 => $que_value1) {
                                                         ?>

@@ -85,12 +85,6 @@ if (isset($_GET['type']) || $_GET['type']!=="") {
                                             <h4 class="text-center">Please read the instructions carefully</h4>
                                             <h4><strong><u>General Instructions:</u></strong></h4>
                                             <ol>
-                                                <li>
-                                                    <ul>
-                                                        <li>Total duration of JEE Main Paper- 1 &amp; JEE Main Paper- 2 is 180 min.</li>
-                                                        <li>JEE Paper- 2 is for Mathematics, Aptitude Test & Drawing. The Drawing test is required to be done on separate drawing sheet, which is not part of the current mock test.</li>
-                                                    </ul>
-                                                </li>
                                                 <li>The clock will be set at the server. The countdown timer in the top right corner of screen will display the remaining time available for you to complete the examination. When the timer reaches zero, the
                                                     examination will end by itself. You will not be required to end or submit your examination.</li>
                                                 <li>
@@ -107,7 +101,6 @@ if (isset($_GET['type']) || $_GET['type']!=="") {
                                                     on "&lt;" which appears on the right side of question window.</li>
                                                 <li>You can click on your "Profile" image on top right corner of your screen to change the language during the exam for entire question paper. On clicking of Profile image you will get a drop-down to change
                                                     the question content to the desired language.</li>
-                                                <li>You can click on <img src="exam_assets/img/QuizIcons/down.png" /> to navigate to the bottom and <img src="exam_assets/img/QuizIcons/up.png" /> to navigate to top of the question are, without scrolling.</li>
                                             </ol>
                                             <h4><strong><u>Navigating to a Question:</u></strong></h4>
                                             <ol start="7">

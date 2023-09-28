@@ -1,7 +1,8 @@
 ﻿<?php 
 include "constant.php";
-$url = $URL . "question/read_question_list.php";
-$data = array();
+$url = $URL . "question/read_question_by_exam_id.php";
+$exam_id = base64_decode($_GET['id']);
+$data = array("exam_id"=>$exam_id);
 //print_r($data);
 $postdata = json_encode($data);
 $client = curl_init($url);
@@ -12,18 +13,18 @@ $response = curl_exec($client);
 $result = json_decode($response);
 //print_r($result);
 
-$que_url = $URL . "student/read_student_by_id.php";
-$student_id = $_GET['id'];
+$student_url = $URL . "student/read_student_by_id.php";
+$student_id = base64_decode($_GET['student']);
 $data = array("id" => $student_id);
-//print_r($data);
-$que_postdata = json_encode($data);
-$client = curl_init($que_url);
+// print_r($data);
+$student_postdata = json_encode($data);
+$client = curl_init($student_url);
 curl_setopt($client, CURLOPT_RETURNTRANSFER, 1);
-curl_setopt($client, CURLOPT_POSTFIELDS, $que_postdata);
-$response_question = curl_exec($client);
-// print_r($response_question);
-$result_question = json_decode($response_question);
-// print_r($result_question);
+curl_setopt($client, CURLOPT_POSTFIELDS, $student_postdata);
+$response_student = curl_exec($client);
+// print_r($response_student);
+$result_student = json_decode($response_student);
+// print_r($result_student);
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -66,7 +67,7 @@ $result_question = json_decode($response_question);
             </div>
         </div>
         <div class="clear"></div>
-        <header class="main-header">
+        <!-- <header class="main-header">
             <div class="navbar" data-spy="affix" data-offset-top="200">
                 <div class="navbar navbar-default yamm" role="navigation" id="navbar">
                     <div class="container">
@@ -75,7 +76,7 @@ $result_question = json_decode($response_question);
                                 <img src="assets/images/logo1.png" alt="GICT logo" class="img-responsive">
                             </a>
                         </div>
-                        <div class="col-md-5 pull-right">
+                        <div class="col-md-6 pull-right">
                             <div class="navbar-collapse">
                                 <ul class="nav navbar-nav pull-right">
                                     <li class="user-profile">
@@ -84,14 +85,23 @@ $result_question = json_decode($response_question);
                                                 <td style="padding: 5px 15px; border: 2px solid #666"><i class="fa fa-user fa-4x"></i></td>
                                                 <td>
                                                     <table>
+
+                                                        <?php 
+                                                        foreach ($result_student as $key => $value) {
+                                                        foreach ($value as $key1 => $value1) {
+                                                        ?>
+
                                                         <tr>
                                                             <td style="padding: 0px 5px;">Candidate Name</td>
-                                                            <td> : <span style="color: #f7931e; font-weight: bold">[Your Name]</span></td>
+                                                            <td> : <span style="color: #f7931e; font-weight: bold"><?php echo $value1->student_name ;?></span></td>
                                                         </tr>
                                                         <tr>
                                                             <td style="padding: 0px 5px;">Subject Name</td>
-                                                            <td> : <span style="color: #f7931e; font-weight: bold">[Test Practice]</span></td>
+                                                            <td> : <span style="color: #f7931e; font-weight: bold"><?php echo $value1->course ;?></span></td>
                                                         </tr>
+
+                                                        <?php } } ?>
+
                                                         <tr>
                                                             <td style="padding: 0px 5px;">Remaining Time</td>
                                                             <td>
@@ -105,55 +115,66 @@ $result_question = json_decode($response_question);
                                     </li>
 
                                 </ul>
-                                <input type="hidden" id="hdfTestDuration" value="180" />
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </header>
-        <div class="clear"></div>
+        </header> 
+        <div class="clear"></div> -->
         <div>
             <div id="heading-breadcrumbs">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-7 pull-left">
+                        <div class="col-md-6 col-sm-12">
+                            <a class="navbar-brand home">
+                                <img src="web image/logo 1.png" alt="GICT logo" class="img-responsive">
+                            </a>
+                        </div>
+                        <div class="clear-xs "></div>
+                        <div class="col-md-6 col-sm-12 pull-right">
                             <table class="stream">
-                                <tr class="full-width">
-                                    <td class="full-width">
-                                        <h1> <?php echo base64_decode($_GET['id']) ;?> </h1>
-                                    </td>
 
-                                    <!-- <td class="full-width"><a class="mb5 btn btn-primary stream_1 full-width" href="javascript:void(0);" data-href="page01">Physics</a>
-                                        <div class="clear-xs"></div>
+                                <tr>
+                                    <!-- <td style="padding: 5px 15px; border: 2px solid #666">
+                                        <i class="fa fa-user fa-4x"></i>
+                                    </td> -->
+                                </tr>
+                                <tr class="full-width">
+                                                            
+                                    <?php 
+                                    foreach ($result_student as $key => $value) {
+                                    foreach ($value as $key1 => $value1) {
+                                    ?>
+                                    <td class="full-width">
+                                        <tr>
+                                            <td style="color: #ffffff; font-weight: bold">Candidate Name</td>
+                                            <td> : <span style="color: #f7931e; font-weight: bold"><?php echo $value1->student_name ;?></span></td>
+                                        </tr>
                                     </td>
-                                    <td class="full-width"><a class="mb5 btn btn-primary stream_1 full-width" href="javascript:void(0);" data-href="page31">Chemistry</a></td>
-                                    <td class="full-width"><a class="mb5 btn btn-primary stream_1 full-width" href="javascript:void(0);" data-href="page61">Mathematics</a></td> -->
+                                    <td class="full-width">
+                                        <tr>
+                                            <td style="color: #ffffff; font-weight: bold">Subject Name</td>
+                                            <td> : <span style="color: #f7931e; font-weight: bold"><?php echo $course = $value1->course ;?></span></td>
+                                        </tr>
+                                    </td>
+                                    <td class="full-width">
+                                        <tr>
+                                            <td style="color: #ffffff; font-weight: bold">Remaining Time</td>
+                                            <td>
+                                                : <span class="timer-title time-started">00:00:00</span>
+                                            </td>
+                                        </tr>
+                                    </td>
+                                    <?php }}?>
                                 </tr>
                             </table>
-                        </div>
-
-
-                        <div class="clear-xs "></div>
-                        <div class="col-md-3 text-right">
-                            <!-- <div style="padding: 15px 0 0 0">
-                                <a class="btn btn-primary pull-left full-width" target="_blank" href="exam_assets/pdf/JEE-Main-2018.pdf"><i class="fa fa-download"></i> Download Question</a>
-                            </div> -->
-                        </div>
-                        <div class="clear-xs"></div>
-                        <div class="col-md-2 col-sm-12" id="divdrplngcng" @*style="margin: 15px 0 0 0" *@>
-                            <text style="color:white; font-weight:bold">Paper Language:</text>
-                            <select class="form-control drplanguage">
-                                <option selected value="english">English</option>
-                                <!-- <option value="hindi">Hindi</option> -->
-                                <!-- <option value="gujarati">Gujarati</option> -->
-                            </select>
-                            <input type="hidden" id="hdfCurrentLng" value="English" />
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        <input type="hidden" id="hdfTestDuration" value="60" />
         <div id="content">
             <div class="container">
                 <div class="row exam-paper">
@@ -174,7 +195,15 @@ $result_question = json_decode($response_question);
                                                 foreach ($value as $key1 => $value1) {
                                                 ?>
 
-                                                    <div style="dislpay:none" class="tab-content div-question mb0" id="page<?php echo ++$counter ;?>">
+                                                    <div 
+                                                    <?php 
+                                                    if ($counter == 0) {
+                                                        echo '';
+                                                    } else {
+                                                        echo 'style="display:none;"';
+                                                    }
+                                                    ?>
+                                                     class="tab-content div-question mb0" id="page<?php echo ++$counter ;?>">
                                                         <input type="hidden" value="1" class="hdfQuestionID">
                                                         <input type="hidden" value="1" class="hdfPaperSetID">
                                                         <input type="hidden" value="<?php echo $value1->correct_option ;?>" class="hdfCurrectAns">
@@ -272,8 +301,26 @@ $result_question = json_decode($response_question);
                                     foreach ($result as $key => $value) {
                                     foreach ($value as $key1 => $value1) {
                                     ?>
-                                    <!-- <li class="active" data-seq="1"><a class="test-ques que-not-answered" href="javascript:void(0);" data-href="page<?php //echo ++$page_counter ?>"><?php //echo $page_counter ?></a></li> -->
-                                    <li data-seq="1"><a class="test-ques que-not-attempted" href="javascript:void(0);" data-href="page<?php echo ++$page_counter ?>"><?php echo $page_counter ?></a></li>
+                                    <li 
+                                        <?php 
+                                        if ($page_counter == 0) {
+                                            echo 'class="active"';
+                                        } else {
+                                            echo "";
+                                        }
+                                        ?>
+                                         data-seq="1">
+                                        <a class="test-ques que-not-<?php 
+                                        if ($page_counter == 0) {
+                                            echo "answered";
+                                        } else {
+                                            echo "attempted";
+                                        }
+                                        ?>" href="javascript:void(0);" data-href="page<?php echo ++$page_counter; ?>">
+                                            <?php echo $page_counter; ?>
+                                        </a>
+                                    </li>
+                                    <!-- <li data-seq="1"><a class="test-ques que-not-attempted" href="javascript:void(0);" data-href="page<?php //echo ++$page_counter ?>"><?php //echo $page_counter ?></a></li> -->
                                     <?php } } ?>
                                 </ul>
                             </div>
@@ -299,7 +346,7 @@ $result_question = json_decode($response_question);
                                     </thead>
                                     <tbody>
                                         <tr>
-                                            <td class=""><?php echo base64_decode($_GET['id']) ?></td>
+                                            <td class=""><?php echo $course ; ?></td>
                                             <td class="lblTotalQuestion"></td>
                                             <td class="lblTotalSaved"></td>
                                             <td class="lblNotAttempted"></td>

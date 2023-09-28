@@ -1,9 +1,9 @@
 <?php
 include '../../constant.php';
-include '../php-jwt/src/JWT.php';
-include '../php-jwt/src/ExpiredException.php';
-include '../php-jwt/src/SignatureInvalidException.php';
-include '../php-jwt/src/BeforeValidException.php';
+include '../../admin/php-jwt/src/JWT.php';
+include '../../admin/php-jwt/src/ExpiredException.php';
+include '../../admin/php-jwt/src/SignatureInvalidException.php';
+include '../../admin/php-jwt/src/BeforeValidException.php';
 use \Firebase\JWT\JWT;
 
 $login_email = $_POST["login_email"];

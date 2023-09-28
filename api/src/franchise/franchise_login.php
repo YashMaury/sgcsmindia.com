@@ -7,10 +7,10 @@ header("Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers
 require '../../../constant.php';
 include_once '../../config/database.php';
 include_once '../../objects/franchise.php';
-require '../../../centerpanel/php-jwt/src/JWT.php';
-require '../../../centerpanel/php-jwt/src/ExpiredException.php';
-require '../../../centerpanel/php-jwt/src/SignatureInvalidException.php';
-require '../../../centerpanel/php-jwt/src/BeforeValidException.php';
+require '../../../admin/php-jwt/src/JWT.php';
+require '../../../admin/php-jwt/src/ExpiredException.php';
+require '../../../admin/php-jwt/src/SignatureInvalidException.php';
+require '../../../admin/php-jwt/src/BeforeValidException.php';
 use \Firebase\JWT\JWT;
 
 $issuedat_claim = time(); // issued at

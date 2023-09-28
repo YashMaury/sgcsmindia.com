@@ -117,6 +117,15 @@ class Question
         return $stmt;
     }
 
+    function read_question_by_exam_id()
+    {
+        $query = "Select id, exam_id, question_name, option_1, option_2, option_3, option_4, correct_option, status, created_on, created_by from " . $this->questions . " where exam_id=:exam_id";
+        $stmt = $this->conn->prepare($query);
+        $stmt->bindParam(":exam_id", $this->exam_id);
+        $stmt->execute();
+        return $stmt;
+    }
+
     function delete_question()
     {
 
@@ -135,15 +144,6 @@ class Question
 
         return false;
     }
-
-    // function read_exam_by_id()
-    // {
-    //     $query = "Select id, exam_name, exam_course, no_question, status, created_on, created_by from " . $this->exam . " where id=:id";
-    //     $stmt = $this->conn->prepare($query);
-    //     $stmt->bindParam(":id", $this->id);
-    //     $stmt->execute();
-    //     return $stmt;
-    // }
 
 }
 ?>
